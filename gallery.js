@@ -217,28 +217,31 @@ const galleryPhotos = [
         caption: "We're bestie forever, semoga kita bisa main bareng lagi ya😭",
         date: "2025"
     }
-    /*
+    
     ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
+        image: "assets/8807028910_85931312520925_1764258003136.png",
+        game: "🎮 Roblox",
+        title: "Rawr dan Paw",
+        caption: "sipaling jarang join tapi selalu ditunggu join dia... dulu",
+        date: "2025"
+    }    
+    ,{
+        image: "assets/8807028910_137526408608242_1777889452924.png",
         game: "🎮 Roblox",
         title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
-    }    ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
-        game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
+        caption: "ayo muncak lagi besty tapi anu gendong hehee (lyn)",
+        date: "2026"
     }
     
     ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
+        image: "assets/8807028910_121864768012064_1769672360760.png",
         game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
+        title: "Kangen hutan (?)",
+        caption: "Kangen kenangan bareng kalian.",
         date: "2025"
-    }    ,{
+    }    
+    /*
+    ,{
         image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
         game: "🎮 Roblox",
         title: "Hey ...",
