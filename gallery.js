@@ -283,6 +283,13 @@ const galleryPhotos = [
         caption: "Jill, it's nice to meet you. Let's stay in touch, okay? Let's keep being friends.",
         date: "2025"
     }
+    ,{
+        image: "assets/Screenshot_2026-05-23-21-55-18-722_com.roblox.client.jpg",
+        game: "🎮 Roblox",
+        title: "Cp Ava",
+        caption: "couplean ava ada wong",
+        date: "2025"
+    }
     /*
     ,{
         image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
@@ -292,10 +299,94 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
+        image: "assets/0222b1a5-3974-4a57-8707-0c2df711e952.jpg",
         game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/128ecf5d-ccc4-4827-b526-1fee5a04fc4b.jpg",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/2352c7af-fe20-4ae0-8eae-bc257798eb5e.jpg",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/55960ee5-6a77-4d76-b735-dba971bde91b.jpg",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/5c6ad203-ecdb-4dbe-a17f-ef80df6fa20e.jpg",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/8807028910_121864768012064_1765298215107.png",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/9136335981_119865410252788_1759147779623.png",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/9136335981_86954037607818_1779801109331.png",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/9136335981_86954037607818_1779801124185.png",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/99bdc599-dce5-4426-b396-0f8bf05fa5ee.jpg",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/a6acab1e-7a15-459f-b2d8-6cf2b88272ca.jpg",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/d4c85822-15e8-4ede-ae56-4aa74cc370cb.jpg",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/db9ca31c-46fd-4dc0-b730-744757d119c6.jpg",
+        game: "🎮 Roblox",
+        title: "Kenangan Roblox",
+        caption: "Salah satu kenangan seru kita.",
         date: "2025"
     }
     */
