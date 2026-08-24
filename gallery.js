@@ -240,47 +240,51 @@ const galleryPhotos = [
         caption: "Kangen kenangan bareng kalian.",
         date: "2025"
     }    
+    
+    ,{
+        image: "assets/9136335981_86954037607818_1779801000689.png",
+        game: "🎮 Roblox",
+        title: "Mount Palung",
+        caption: "Kapan ya muncak bareng lagi? semoga kita bisa main bareng lagi ya😭",
+        date: "2026"
+    }
+    ,{
+        image: "assets/9136335981_86954037607818_1779801023151.png",
+        game: "🎮 Roblox",
+        title: "JieSyaMiAp",
+        caption: "Jiebell, Syaa, Mio, dan Asep",
+        date: "2025"
+    }    
+    ,{
+        image: "assets/9136335981_119865410252788_1759147761879.png",
+        game: "🎮 Roblox",
+        title: "...",
+        caption: "...",
+        date: "2025"
+    }
+    
+    ,{
+        image: "assets/afb9ab51-d07f-43fc-b226-957789945dec.jpg",
+        game: "🎮 Roblox",
+        title: "My bestfriend in rl",
+        caption: "my bubub, my bestie, my everything",
+        date: "2025"
+    }    ,{
+        image: "assets/ce0d8721-693e-4b09-b52e-0eebfa716998.jpg",
+        game: "🎮 Roblox",
+        title: "Bang twist",
+        caption: "Lama kali kita tidak main.",
+        date: "2025"
+    }
+    ,{
+        image: "assets/ad88d91e-0582-4263-97dd-b3ee304ba730.jpg",
+        game: "🎮 Roblox",
+        title: "Mount again",
+        caption: "Jill, it's nice to meet you. Let's stay in touch, okay? Let's keep being friends.",
+        date: "2025"
+    }
     /*
     ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
-        game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
-    }
-    ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
-        game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
-    }    ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
-        game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
-    }
-    ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
-        game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
-    }    ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
-        game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
-    }
-    ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
-        game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
-    }    ,{
         image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
         game: "🎮 Roblox",
         title: "Hey ...",
