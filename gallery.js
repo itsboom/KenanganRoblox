@@ -251,8 +251,8 @@ const galleryPhotos = [
     ,{
         image: "assets/9136335981_86954037607818_1779801023151.png",
         game: "🎮 Roblox",
-        title: "JieSyaMiAp",
-        caption: "Jiebell, Syaa, Mio, dan Asep",
+        title: "JieSyaMiUt",
+        caption: "Jiebell, Syaa, Mio, dan Uta",
         date: "2025"
     }    
     ,{
