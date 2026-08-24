@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Semua foto kenangan kita — galeri lengkap dari Our Roblox Memories."
+    >
+
+    <title>Semua Foto Kita 📸 | Our Roblox Memories</title>
+
+    <!-- Google Fonts: maximum 2 fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         DECORATIVE FLOATING ELEMENTS
+    ====================================================== -->
+    <div class="floating-decorations" aria-hidden="true">
+        <span class="float-item float-1">✦</span>
+        <span class="float-item float-2">♡</span>
+        <span class="float-item float-3">✧</span>
+        <span class="float-item float-4">⭐</span>
+        <span class="float-item float-5">✨</span>
+        <span class="float-item float-6">🎮</span>
+        <span class="float-item float-7">♡</span>
+    </div>
+
+
+    <!-- =====================================================
+         MAIN WEBSITE
+    ====================================================== -->
+    <div class="site-wrapper is-visible" id="siteWrapper">
+
+        <!-- NAVIGATION -->
+        <header class="site-header">
+
+            <nav class="navbar container gallery-navbar" aria-label="Main navigation">
+
+                <!-- LOGO -> back to home -->
+                <a href="index.html" class="logo">
+                    <span>🎮</span>
+                    Our Memories
+                </a>
+
+            </nav>
+
+        </header>
+
+
+        <main>
+                    <div class="gallery-hero-actions">
+                        <a href="index.html" class="back-home-link">
+                            <span>🏠</span>
+                            Kembali ke Home
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 PHOTO GRID
+            ================================================== -->
+            <section class="section" id="galleryGrid">
+
+                <div class="container">
+
+                    <div class="memory-grid" id="galleryGridWrap">
+                        <!-- Photo cards are injected by gallery.js -->
+                    </div>
+
+                    <p class="gallery-empty-note" id="galleryEmptyNote" hidden>
+                        Belum ada foto di sini. Tambahkan foto ke dalam
+                        array <code>galleryPhotos</code> di gallery.js ya!
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+        <footer class="site-footer">
+
+            <div class="footer-decoration" aria-hidden="true">
+                ✦ ♡ 🎮 ✧ ⭐
+            </div>
+
+            <h2>
+                That's all the photos... for now 🎮
+            </h2>
+
+            <p>
+                Masih akan terus nambah kok.
+            </p>
+
+            <a href="index.html" class="back-home-link">
+                <span>🏠</span>
+                Kembali ke Home
+            </a>
+
+            <div class="footer-line"></div>
+
+            <small class="footer-credit">
+                Our Roblox Memories ♡
+            </small>
+
+        </footer>
+
+    </div>
+
+
+    <!-- =====================================================
+         LIGHTBOX
+    ====================================================== -->
+    <div
+        class="modal"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="lightboxTitle"
+        aria-hidden="true"
+    >
+
+        <div class="modal-backdrop"></div>
+
+        <div class="lightbox-content">
+
+            <button
+                class="modal-close"
+                id="lightboxClose"
+                type="button"
+                aria-label="Close photo"
+            >
+                ×
+            </button>
+
+            <img
+                src="assets/placeholder.jpg"
+                alt=""
+                id="lightboxImage"
+                class="lightbox-image"
+            >
+
+            <div class="lightbox-info">
+
+                <span id="lightboxGame">
+                    🎮 Roblox
+                </span>
+
+                <h2 id="lightboxTitle">
+                    Memory title
+                </h2>
+
+                <time id="lightboxDate">
+                    August 24, 2026
+                </time>
+
+                <p id="lightboxCaption">
+                    Memory caption.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="gallery.js"></script>
+
+</body>
+</html>
