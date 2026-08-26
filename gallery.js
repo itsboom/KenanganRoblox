@@ -408,21 +408,25 @@ const galleryPhotos = [
         people: "Syaa, Kak Kiki",
         date: "2025"
     }
+    
+    ,{
+        image: "assets/7807029164_130444125462169_1787755587418_1.png",
+        game: "🎮 Roblox",
+        title: "Penakluk Puncak MT Daun Roblox",
+        caption: "mt daun peak! ava-nya pada anomali tapi tetep nyampe puncak.",
+        people: "Zabe, Kak Jiebell, Syaa, Mio, Desmon",
+        date: "Agustus 2025"
+    }
+    
+    ,{
+        image: "assets/7807029164_130444125462169_1787755487422.png",
+        game: "🎮 Roblox",
+        title: "Ekspedisi mt daun ter-gajelas",
+        caption: "vibes muncak kali ini agak laen. Tapi tetep seru kok.",
+        people: "Zabe, Kak Jiebell, Syaa, Mio, Desmon",
+        date: "Agustus 2025"
+    }
     /*
-    ,{
-        image: "assets/9136335981_86954037607818_1779801124185.png",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    ,{
-        image: "assets/99bdc599-dce5-4426-b396-0f8bf05fa5ee.jpg",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
     ,{
         image: "assets/a6acab1e-7a15-459f-b2d8-6cf2b88272ca.jpg",
         game: "🎮 Roblox",
