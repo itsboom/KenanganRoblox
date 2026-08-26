@@ -60,24 +60,28 @@
 
 
         <main>
+
+            <!-- =================================================
+                 PHOTO GRID
+            ================================================== -->
+            <section class="section gallery-grid-section" id="galleryGrid">
+
+                <div class="container">
+
                     <div class="gallery-hero-actions">
-                        <a href="index.html" class="back-home-link">
+                        <a href="home.html" class="back-home-link">
                             <span>🏠</span>
                             Kembali ke Home
                         </a>
                     </div>
 
-                </div>
+                    <div class="gallery-filters" id="galleryFilters" aria-label="Filter foto berdasarkan tahun">
+                        <!-- Year chips are injected by gallery.js -->
+                    </div>
 
-            </section>
-
-
-            <!-- =================================================
-                 PHOTO GRID
-            ================================================== -->
-            <section class="section" id="galleryGrid">
-
-                <div class="container">
+                    <div class="gallery-filters gallery-filters-months" id="galleryMonthFilters" aria-label="Filter foto berdasarkan bulan" hidden>
+                        <!-- Month chips are injected by gallery.js, only when a year is selected -->
+                    </div>
 
                     <div class="memory-grid" id="galleryGridWrap">
                         <!-- Photo cards are injected by gallery.js -->
@@ -112,7 +116,7 @@
                 Masih akan terus nambah kok.
             </p>
 
-            <a href="index.html" class="back-home-link">
+            <a href="home.html" class="back-home-link">
                 <span>🏠</span>
                 Kembali ke Home
             </a>
@@ -177,6 +181,8 @@
                 <p id="lightboxCaption">
                     Memory caption.
                 </p>
+
+                <p id="lightboxPeople" class="lightbox-people"></p>
 
             </div>
 

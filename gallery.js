@@ -10,9 +10,14 @@
    Tambahkan foto baru di sini kapan pun mau. Cukup:
      1. Taruh file foto barunya di folder /assets
      2. Copy salah satu blok { ... } di bawah ini
-     3. Ganti "image", "game", "title", "caption", "date"
+    3. Ganti "image", "game", "title", "caption", "people", "date"
    Semua foto otomatis muncul di halaman ini, nggak perlu
    ubah HTML sama sekali.
+
+   Soal "date": kalau inget bulannya, tulis "Bulan Tahun"
+   (misal "Agustus 2026"). Kalau nggak inget, tahun aja juga
+   boleh (misal "2026"). Filter di atas grid tetap ngelompokin
+   per tahun otomatis, jadi format apapun di atas tetap kebaca.
 ========================================================= */
 
 const galleryPhotos = [
@@ -21,7 +26,8 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Niatnya cuma main sebentar 😭",
         caption: "Entah bagaimana, kami akhirnya bermain selama tiga jam. Bahkan lebih deh kayaknya.",
-        date: "2026"
+        people: "Dino, Syaa, Yuki",
+        date: "2025"
     },
 
     {
@@ -29,6 +35,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "That was NOT the plan 😭",
         caption: "Awalnya dua cowo itu doang yang mau foto dan berakhir ciwi ciwi ikutan.",
+        people: "Vans, Syaa, Ket, Mio, Kak Jiebell",
         date: "2026"
     },
 
@@ -37,7 +44,8 @@ const galleryPhotos = [
         game: "🏝️ Roblox",
         title: "We somehow survived",
         caption: "Nobody knew what we were doing, but somehow we made it.",
-        date: "2026"
+        people: "Vin, Syaa, ifa, Mio, Rawr",
+        date: "2025"
     },
 
     {
@@ -45,6 +53,7 @@ const galleryPhotos = [
         game: "😂 Roblox",
         title: "The legendary disaster",
         caption: "We laughed more than we actually played. Foto di kesempatan dalam kesempitan.",
+        people: "Rawr, Syaa, Mio",
         date: "2026"
     },
 
@@ -53,6 +62,7 @@ const galleryPhotos = [
         game: "🌙 Roblox",
         title: "One last game...",
         caption: "It was never actually the last game. Jangan bilang \"one last game\" lagi ya😭",
+        people: "Mio, Kak Jiebell, Rawr, Syaa",
         date: "2026"
     },
 
@@ -61,6 +71,7 @@ const galleryPhotos = [
         game: "🌙 Roblox",
         title: "May it never end",
         caption: "Seneng banget bisa main bareng kalian. Semoga kita bisa main bareng terus.",
+        people: "Vans, Syaa, Ket, Mio, Kak Jiebell",
         date: "2026"
     }
 
@@ -70,6 +81,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Fish it huhu",
         caption: "Seru Banget waktu itu dan bener-bener nggk kenal waktu.",
+        people: "Mio, Syaa, Rawr",
         date: "2025"
     }
 
@@ -78,6 +90,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Fish it lagi",
         caption: "Jujur kangen ... tapi nggk bisa main bareng lagi.",
+        people: "Vall, Juan, Mio,Rawr, Syaa, Bang Rezz",
         date: "2025"
     }
 
@@ -86,6 +99,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Menyamar",
         caption: "Bener-bener jadi mbaas nih kita mio😭",
+        people: "Syaa, Rawr, Mio",
         date: "2026"
     }
 
@@ -94,6 +108,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Muncak bareng bestie",
         caption: "Kapan kita muncak lagi? dan melewati rintangan bareng lagi?😭",
+        people: "Syaa, Mio",
         date: "2026"
     }
     ,{
@@ -101,6 +116,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Muncak bareng bestie jill",
         caption: "Jill dulu kita main gunung nggk kenal waktu ya ...",
+        people: "Syaa, Jijill",
         date: "2025"
     }
     ,{
@@ -108,6 +124,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Foto random",
         caption: "I always remember ...",
+        people: "Jijill",
         date: "2025"
     }
 
@@ -116,6 +133,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Bersama kak kiki yuhu",
         caption: "Donator kak kiki yang baik hati, semoga kita bisa main bareng lagi ya kak😭",
+        people: "Syaa, Kak Kiki, Kak Elin",
         date: "2025"
     }
         ,{
@@ -123,6 +141,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "I MISS U",
         caption: "Kamu temen pertama ku di roblox deh ...",
+        people: "Syaa, Jijill",
         date: "2025"
     }
 
@@ -131,6 +150,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "I will never forget you",
         caption: "We don't play Roblox together much anymore, but you're still one of my favorite people ...",
+        people: "Syaa, Jijill",
         date: "2025"
     }
         ,{
@@ -138,13 +158,15 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Ghost...",
         caption: "Ghostfinn atau ghosting?",
+        people: "Rawr, Syaa, Mio",
         date: "2025"
     }
-            ,{
+     ,{
         image: "assets/7f2b283b-42cf-4bbc-9e26-57ca31d29411.jpg",
         game: "🎮 Roblox",
         title: "Muncakk",
         caption: "Bareng kak jie dan jill nih",
+        people: "Kak Jiebell, Syaa, Jijill",
         date: "2025"
     }
     ,{
@@ -152,6 +174,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Muncak lagi dan lagi",
         caption: "Tenang aja, bang xoul masuk juga kok",
+        people: "Jijill, Syaa, Bang Xoul",
         date: "2025"
     }
     ,{
@@ -159,6 +182,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "My dino",
         caption: "Bestie ku yang satu ini bener-bener nggk bisa di lupain deh😭",
+        people: "Syaa, Dino",
         date: "2025"
     }
 
@@ -167,6 +191,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Hey ...",
         caption: "Ava mu lucu kali paok",
+        people: "Juan/Ura, Stranger",
         date: "2025"
     }
     ,{
@@ -174,6 +199,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Jangan lupa ke gunung ini ya bestie ku",
         caption: "Ini gampang banget kok, siapin mental aja",
+        people: "Admin, Jijill, Bang Xoul, Syaa",
         date: "2025"
     }
     ,{
@@ -181,6 +207,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Cama cepupu",
         caption: "uhuk, dah sibuk kerja nich",
+        people: "Syaa, Teh Elin",
         date: "2025"
     }
         ,{
@@ -188,6 +215,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Kak kookiee",
         caption: "Sekarang aku canggung sama donatur ku ini",
+        people: "Syaa, Kak Kiki, stranger",
         date: "2025"
     }
     ,{
@@ -195,6 +223,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Bacon",
         caption: "Kita bacon lucu dan imut",
+        people: "Jijill, Bang Xoul, Syaa",
         date: "2025"
     }    
     ,{
@@ -202,6 +231,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Mau Bunga?",
         caption: "Ini bunga dari mio, rawr, dan syaa.",
+        people: "Mio, Rawr, Syaa",
         date: "2025"
     }
     ,{
@@ -209,12 +239,14 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "🤏",
         caption: "Aku masukin aja deh",
+        people: "Ura/Juan",
         date: "2025"
     }    ,{
         image: "assets/6027e675-625e-4c47-9c9d-1dd5e5ccf4b0.jpg",
         game: "🎮 Roblox",
         title: "Jijil dan syaa",
         caption: "We're bestie forever, semoga kita bisa main bareng lagi ya😭",
+        people: "Jijill, Syaa",
         date: "2025"
     }
     
@@ -223,6 +255,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Rawr dan Paw",
         caption: "sipaling jarang join tapi selalu ditunggu join dia... dulu",
+        people: "Rash, Rawr",
         date: "2025"
     }    
     ,{
@@ -230,6 +263,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Hey ...",
         caption: "ayo muncak lagi besty tapi anu gendong hehee (lyn)",
+        people: "Syaa, Mio",
         date: "2026"
     }
     
@@ -238,6 +272,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Kangen hutan (?)",
         caption: "Kangen kenangan bareng kalian.",
+        people: "Rawr, Mio, Bin ",
         date: "2025"
     }    
     
@@ -246,6 +281,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Mount Palung",
         caption: "Kapan ya muncak bareng lagi? semoga kita bisa main bareng lagi ya😭",
+        people: "Uta, Mio, Syaa, Kak Jiebell",
         date: "2026"
     }
     ,{
@@ -253,13 +289,15 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "JieSyaMiUt",
         caption: "Jiebell, Syaa, Mio, dan Uta",
+        people: "Uta, Mio, Syaa, Kak Jiebell",
         date: "2025"
     }    
     ,{
         image: "assets/9136335981_119865410252788_1759147761879.png",
         game: "🎮 Roblox",
-        title: "...",
-        caption: "...",
+        title: "Awal mula kita kenal",
+        caption: "Pertama kali kenal kak",
+        people: "Jijill, Bang Xoul, Syaa, Kak Jiebell",
         date: "2025"
     }
     
@@ -268,12 +306,14 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "My bestfriend in rl",
         caption: "my bubub, my bestie, my everything",
+        people: "Syaa, Sitiw",
         date: "2025"
     }    ,{
         image: "assets/ce0d8721-693e-4b09-b52e-0eebfa716998.jpg",
         game: "🎮 Roblox",
         title: "Bang twist",
         caption: "Lama kali kita tidak main.",
+        people: "Syaa, Bang Twist's Friends",
         date: "2025"
     }
     ,{
@@ -281,6 +321,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Mount again",
         caption: "Jill, it's nice to meet you. Let's stay in touch, okay? Let's keep being friends.",
+        people: "Jill, You",
         date: "2025"
     }
     ,{
@@ -288,30 +329,37 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Cp Ava",
         caption: "couplean ava ada wong",
-        date: "2025"
+        people: "Rawr, Syaa, Mio, Bang Xoul, Kak Jiebell",
+        date: "2026"
+    }
+    
+    ,{
+        image: "assets/380fb3f5-4fa1-4753-ad30-533735076b2d.png",
+        game: "🎮 Roblox",
+        title: "kekacauan kecil",
+        caption: "yang satu ngomong, yang satu ngikut, yang satu lagi entah ngapain😭",
+        people: "Syaa, Desmond, Mio",
+        date: "Agustus 2026"
+    }
+    
+    ,{
+        image: "assets/68d38416-e71c-4d5a-96e9-78235283f711.png",
+        game: "❤ Roblox",
+        title: "VD❤",
+        caption: "Lagi nunggu match mulai dan kita foto dulu deh.",
+        people: "Mio, Syaa",
+        date: "2026"
+    }
+    
+    ,{
+        image: "assets/af96cc0f-ccd0-4c43-903f-35ff1e361084.jpg",
+        game: "💃 Roblox",
+        title: "Cute Squad, Creepy Vibe 🍓✨",
+        caption: "Peta boleh serem, yang penting outfit tetep kece dan mabar bareng temen sefrekuensi! 🤍👻",
+        people: "Riven, Kak Jiebell, Syaa, Mio",
+        date: "2026"
     }
     /*
-    ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
-        game: "🎮 Roblox",
-        title: "Hey ...",
-        caption: "Ava mu lucu kali paok",
-        date: "2025"
-    }
-    ,{
-        image: "assets/0222b1a5-3974-4a57-8707-0c2df711e952.jpg",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    ,{
-        image: "assets/128ecf5d-ccc4-4827-b526-1fee5a04fc4b.jpg",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
     ,{
         image: "assets/2352c7af-fe20-4ae0-8eae-bc257798eb5e.jpg",
         game: "🎮 Roblox",
@@ -394,9 +442,31 @@ const galleryPhotos = [
 
 
 /* =========================================================
+   DATE HELPER
+   -----------------------------------------------------------
+   "date" boleh diisi "Agustus 2026" atau cuma "2026" — fungsi
+   ini narik 4 digit tahunnya aja, dipakai buat filter supaya
+   chip-nya tetap per tahun (bukan pecah per bulan).
+========================================================= */
+
+function extractYear(dateStr) {
+
+    if (!dateStr) {
+        return null;
+    }
+
+    const match = String(dateStr).match(/\d{4}/);
+
+    return match ? match[0] : null;
+
+}
+
+
+/* =========================================================
    DOM ELEMENTS
 ========================================================= */
 
+const galleryFilters = document.getElementById("galleryFilters");
 const galleryGridWrap = document.getElementById("galleryGridWrap");
 const galleryEmptyNote = document.getElementById("galleryEmptyNote");
 
@@ -408,6 +478,104 @@ const lightboxGame = document.getElementById("lightboxGame");
 const lightboxTitle = document.getElementById("lightboxTitle");
 const lightboxDate = document.getElementById("lightboxDate");
 const lightboxCaption = document.getElementById("lightboxCaption");
+const lightboxPeople = document.getElementById("lightboxPeople");
+
+
+/* =========================================================
+   FILTER STATE
+   -----------------------------------------------------------
+   "activeFilter" is either "all" or a specific year string
+   (e.g. "2026"). It's whatever the user last clicked.
+========================================================= */
+
+let activeFilter = "all";
+
+/* Foto yang lagi ditampilkan (setelah difilter), dipakai
+   supaya index di lightbox tetap sesuai foto yang diklik. */
+let visiblePhotos = galleryPhotos;
+
+
+/* =========================================================
+   BUILD FILTER CHIPS
+   Tahun-tahunnya diambil otomatis dari data galleryPhotos,
+   jadi kalau nambah foto tahun baru, chip-nya nambah sendiri.
+========================================================= */
+
+function buildGalleryFilters() {
+
+    if (!galleryFilters) {
+        return;
+    }
+
+    const years = Array.from(
+        new Set(
+            galleryPhotos
+                .map((photo) => extractYear(photo.date))
+                .filter(Boolean)
+        )
+    ).sort((a, b) => b.localeCompare(a));
+
+    if (years.length <= 1) {
+        galleryFilters.hidden = true;
+        return;
+    }
+
+    galleryFilters.innerHTML = "";
+
+    const allChip = document.createElement("button");
+    allChip.type = "button";
+    allChip.className = "filter-chip";
+    allChip.textContent = "Semua";
+    allChip.dataset.filter = "all";
+
+    galleryFilters.appendChild(allChip);
+
+    years.forEach((year) => {
+
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "filter-chip";
+        chip.textContent = year;
+        chip.dataset.filter = year;
+
+        galleryFilters.appendChild(chip);
+
+    });
+
+    updateActiveChip();
+
+    galleryFilters.addEventListener("click", (event) => {
+
+        const chip = event.target.closest(".filter-chip");
+
+        if (!chip) {
+            return;
+        }
+
+        activeFilter = chip.dataset.filter;
+
+        updateActiveChip();
+        buildGalleryGrid();
+
+    });
+
+}
+
+
+function updateActiveChip() {
+
+    galleryFilters
+        .querySelectorAll(".filter-chip")
+        .forEach((chip) => {
+
+            chip.classList.toggle(
+                "is-active",
+                chip.dataset.filter === activeFilter
+            );
+
+        });
+
+}
 
 
 /* =========================================================
@@ -416,14 +584,25 @@ const lightboxCaption = document.getElementById("lightboxCaption");
 
 function buildGalleryGrid() {
 
-    if (galleryPhotos.length === 0) {
+    visiblePhotos =
+        activeFilter === "all"
+            ? galleryPhotos
+            : galleryPhotos.filter(
+                  (photo) => extractYear(photo.date) === activeFilter
+              );
+
+    galleryGridWrap.innerHTML = "";
+
+    if (visiblePhotos.length === 0) {
         galleryEmptyNote.hidden = false;
         return;
     }
 
+    galleryEmptyNote.hidden = true;
+
     const stars = ["✦", "♡", "✧", "⭐"];
 
-    galleryPhotos.forEach((photo, index) => {
+    visiblePhotos.forEach((photo, index) => {
 
         const card = document.createElement("article");
 
@@ -485,6 +664,13 @@ function buildGalleryGrid() {
         content.appendChild(title);
         content.appendChild(caption);
 
+        if (photo.people) {
+            const people = document.createElement("span");
+            people.className = "memory-people";
+            people.textContent = `👥 ${photo.people}`;
+            content.appendChild(people);
+        }
+
         /* Decorative star */
 
         const star = document.createElement("span");
@@ -517,7 +703,7 @@ function buildGalleryGrid() {
 
 function openLightbox(index) {
 
-    const photo = galleryPhotos[index];
+    const photo = visiblePhotos[index];
 
     if (!photo) {
         return;
@@ -530,6 +716,8 @@ function openLightbox(index) {
     lightboxTitle.textContent = photo.title || "";
     lightboxDate.textContent = photo.date || "";
     lightboxCaption.textContent = photo.caption || "";
+    lightboxPeople.textContent = photo.people ? `👥 ${photo.people}` : "";
+    lightboxPeople.hidden = !photo.people;
 
     lightbox.classList.add("is-open");
 
@@ -602,4 +790,5 @@ document.addEventListener("keydown", (event) => {
    INITIALIZATION
 ========================================================= */
 
+buildGalleryFilters();
 buildGalleryGrid();

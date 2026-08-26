@@ -963,6 +963,21 @@ p {
     font-size: 0.85rem;
 }
 
+.memory-people {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: var(--purple-dark);
+    background: rgba(129, 112, 169, 0.1);
+
+    padding: 4px 10px;
+    border-radius: 999px;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
 .paper-star {
     position: absolute;
     right: 18px;
@@ -1020,11 +1035,15 @@ p {
     margin: 14px auto 0;
 }
 
+.gallery-grid-section {
+    padding-top: 30px;
+}
+
 .gallery-hero-actions {
     display: flex;
     justify-content: flex-start;
 
-    margin-top: 30px;
+    margin-bottom: 36px;
     margin-left: 12px;
 }
 
@@ -1064,6 +1083,70 @@ p {
 
     text-align: center;
     font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   GALLERY FILTERS (by year)
+========================================================= */
+
+.gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 36px;
+}
+
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 9px 20px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--purple-dark);
+
+    font-family: var(--body-font);
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.filter-chip:hover {
+    transform: translateY(-2px);
+    background: var(--white);
+    box-shadow: var(--shadow-soft);
+}
+
+.filter-chip.is-active {
+    color: var(--white);
+    background: var(--purple);
+    border-color: var(--purple);
+    box-shadow: 0 10px 25px rgba(129, 112, 169, 0.25);
+}
+
+.gallery-filters-months {
+    margin-top: -14px;
+    margin-bottom: 30px;
+}
+
+.gallery-filters-months .filter-chip {
+    padding: 6px 16px;
+
+    font-size: 0.74rem;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -1485,6 +1568,19 @@ p {
     margin-top: 10px;
 }
 
+.lightbox-people {
+    display: inline-block;
+
+    color: var(--purple-dark);
+    background: rgba(129, 112, 169, 0.1);
+
+    padding: 4px 10px;
+    border-radius: 999px;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
 
 /* =========================================================
    RANDOM MEMORY MODAL
@@ -1854,6 +1950,10 @@ p {
 
     .section {
         padding: 120px 0;
+    }
+
+    .gallery-grid-section {
+        padding-top: 30px;
     }
 
     .memory-grid {

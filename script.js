@@ -58,10 +58,6 @@ const memories = [
    DOM ELEMENTS
 ========================================================= */
 
-const openingScreen = document.getElementById("openingScreen");
-const openMemoriesBtn = document.getElementById("openMemoriesBtn");
-const siteWrapper = document.getElementById("siteWrapper");
-
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
@@ -90,26 +86,6 @@ const secretModal = document.getElementById("secretModal");
 const secretClose = document.getElementById("secretClose");
 
 const confettiContainer = document.getElementById("confettiContainer");
-
-
-/* =========================================================
-   OPENING SCREEN
-========================================================= */
-
-function openWebsite() {
-    openingScreen.classList.add("is-hidden");
-    siteWrapper.classList.add("is-visible");
-
-    document.body.classList.remove("modal-open");
-
-    createConfetti(55);
-
-    setTimeout(() => {
-        openingScreen.style.display = "none";
-    }, 750);
-}
-
-openMemoriesBtn.addEventListener("click", openWebsite);
 
 
 /* =========================================================
@@ -691,31 +667,3 @@ function createConfetti(amount = 40) {
     }
 
 }
-
-
-/* =========================================================
-   INITIALIZATION
-========================================================= */
-
-function initializeWebsite() {
-
-    /*
-     * Opening screen is visible initially.
-     * Main website becomes visible after the button is pressed.
-     */
-
-    siteWrapper.classList.remove("is-visible");
-
-
-    /*
-     * Prevent accidental focus behind the opening screen.
-     */
-    openingScreen.setAttribute(
-        "aria-hidden",
-        "false"
-    );
-
-}
-
-
-initializeWebsite();
