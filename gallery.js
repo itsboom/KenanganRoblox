@@ -255,7 +255,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "Rawr dan Paw",
         caption: "sipaling jarang join tapi selalu ditunggu join dia... dulu",
-        people: "Rash, Rawr",
+        people: "Paw/yuki, Rawr",
         date: "2025"
     }    
     ,{
