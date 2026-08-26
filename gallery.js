@@ -359,49 +359,56 @@ const galleryPhotos = [
         people: "Riven, Kak Jiebell, Syaa, Mio",
         date: "2026"
     }
+    
+    ,{
+        image: "assets/7807029164_121864768012064_1768665147432.png",
+        game: "🎮 Roblox",
+        title: "Fish it",
+        caption: "Mau Pamer ikan lucu.",
+        people: "Syaa, Mio, Rawr, Bang Cloud",
+        date: "2025"
+    }
+    ,{
+        image: "assets/8807028910_108566984388890_1764942193722.png",
+        game: "🎮 Roblox",
+        title: "Mount",
+        caption: "Ini lupa gunung apa, dan menjadi anomali😭.",
+        people: "Syaa, Mio, Rawr",
+        date: "2025"
+    }
+    ,{
+        image: "assets/7807029164_93978595733734_1763384978433.png",
+        game: "🎮 Roblox",
+        title: "Awal Main Violence District",
+        caption: "Kangen lobby ini deh.",
+        people: "Syaa, Mio, Ura/Juan, Stranger",
+        date: "2025"
+    }
+    ,{
+        image: "assets/7807029164_93978595733734_1761746089790.png",
+        game: "🎮 Roblox",
+        title: "Miss",
+        caption: "Kangen keseruan yang dulu.",
+        people: "Syaa, Dino, Paw/Yuki",
+        date: "2025"
+    }
+    ,{
+        image: "assets/7807029164_95086026345735_1752123413378.png",
+        game: "🎮 Roblox",
+        title: "Jangan lupakan aku",
+        caption: "Jangan lupakan aku ya my bestie kuu.",
+        people: "Syaa, sitiw",
+        date: "2025"
+    }
+    ,{
+        image: "assets/RobloxScreenShot20251107_185501061.png",
+        game: "🎮 Roblox",
+        title: "Main bersama",
+        caption: "Terakhir main gunung bareng kak kiki.",
+        people: "Syaa, Kak Kiki",
+        date: "2025"
+    }
     /*
-    ,{
-        image: "assets/2352c7af-fe20-4ae0-8eae-bc257798eb5e.jpg",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    ,{
-        image: "assets/55960ee5-6a77-4d76-b735-dba971bde91b.jpg",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    ,{
-        image: "assets/5c6ad203-ecdb-4dbe-a17f-ef80df6fa20e.jpg",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    ,{
-        image: "assets/8807028910_121864768012064_1765298215107.png",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    ,{
-        image: "assets/9136335981_119865410252788_1759147779623.png",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    ,{
-        image: "assets/9136335981_86954037607818_1779801109331.png",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
     ,{
         image: "assets/9136335981_86954037607818_1779801124185.png",
         game: "🎮 Roblox",
