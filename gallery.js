@@ -424,31 +424,42 @@ const galleryPhotos = [
         title: "Ekspedisi mt daun ter-gajelas",
         caption: "vibes muncak kali ini agak laen. Tapi tetep seru kok.",
         people: "Zabe, Kak Jiebell, Syaa, Mio, Desmon",
-        date: "Agustus 2025"
+        date: "Agustus 2026"
+    }
+    
+    ,{
+        image: "assets/8af88afd-3938-4340-b0f4-9a8ead4f3650.jpg",
+        game: "🎮 Roblox",
+        title: "VD terus",
+        caption: "Dengan teman virtual yang baru.",
+        people: "Niel, Zabe, Kak Jiebell, Syaa, Mio",
+        date: "2026"
+    }
+    ,{
+        image: "assets/2a2ccd1e-f5e2-4f6a-a506-43d5dd1c52d1.png",
+        game: "🎮 Roblox",
+        title: "Soft spoken",
+        caption: "Dengan teman virtual yang baru yang soft spoken.",
+        people: "Riven, Syaa",
+        date: "2026"
+    }
+    ,{
+        image: "assets/f82463f3-46c1-4f67-bd1c-8db8c35162ce.png",
+        game: "🎮 Roblox",
+        title: "No caption",
+        caption: "Salah satu kenangan seru kita.",
+        people: "Riven, Syaa",
+        date: "2025"
     }
     /*
     ,{
-        image: "assets/a6acab1e-7a15-459f-b2d8-6cf2b88272ca.jpg",
+        image: "assets/8af88afd-3938-4340-b0f4-9a8ead4f3650.jpg",
         game: "🎮 Roblox",
         title: "Kenangan Roblox",
         caption: "Salah satu kenangan seru kita.",
         date: "2025"
     }
-    ,{
-        image: "assets/d4c85822-15e8-4ede-ae56-4aa74cc370cb.jpg",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    ,{
-        image: "assets/db9ca31c-46fd-4dc0-b730-744757d119c6.jpg",
-        game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-    */
+*/
 ];
 
 
