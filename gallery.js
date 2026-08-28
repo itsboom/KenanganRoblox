@@ -449,7 +449,7 @@ const galleryPhotos = [
         title: "No caption",
         caption: "Salah satu kenangan seru kita.",
         people: "Riven, Syaa",
-        date: "2025"
+        date: "2026"
     }
     /*
     ,{
