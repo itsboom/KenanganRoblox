@@ -451,15 +451,24 @@ const galleryPhotos = [
         people: "Riven, Syaa",
         date: "2026"
     }
-    /*
+    
     ,{
-        image: "assets/8af88afd-3938-4340-b0f4-9a8ead4f3650.jpg",
+        image: "assets/9136335981_97466273052843_1785941402518.png",
         game: "🎮 Roblox",
-        title: "Kenangan Roblox",
-        caption: "Salah satu kenangan seru kita.",
-        date: "2025"
-    }
-*/
+        title: "triple trouble",
+        caption: "the silly trio will always have my heart.",
+        people: "Kak Jiebell, Rawr, Mio",
+        date: "2026"
+    }        
+    ,{
+        image: "assets/Screenshot_2026-08-29_145458.png",
+        game: "🎮 Roblox",
+        title: "Two random people",
+        caption: " Idenya foto berlima sih, malah nambah 2 😭😭.",
+        people: "Syaa, Kett, Niel, Zabe, Ken, Stranger",
+        date: "2026"
+    } 
+
 ];
 
 
