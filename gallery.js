@@ -1,28 +1,6 @@
-/* =========================================================
-   ALL PHOTOS GALLERY
-   Vanilla JavaScript
-========================================================= */
-
-
-/* =========================================================
-   PHOTO DATA
-   -----------------------------------------------------------
-   Tambahkan foto baru di sini kapan pun mau. Cukup:
-     1. Taruh file foto barunya di folder /assets
-     2. Copy salah satu blok { ... } di bawah ini
-    3. Ganti "image", "game", "title", "caption", "people", "date"
-   Semua foto otomatis muncul di halaman ini, nggak perlu
-   ubah HTML sama sekali.
-
-   Soal "date": kalau inget bulannya, tulis "Bulan Tahun"
-   (misal "Agustus 2026"). Kalau nggak inget, tahun aja juga
-   boleh (misal "2026"). Filter di atas grid tetap ngelompokin
-   per tahun otomatis, jadi format apapun di atas tetap kebaca.
-========================================================= */
-
 const galleryPhotos = [
     {
-        image: "assets/d68fc145-60a4-4cea-ade7-15056a726b2f.jpg",
+        image: "../assets/d68fc145-60a4-4cea-ade7-15056a726b2f.jpg",
         game: "🎮 Roblox",
         title: "Niatnya cuma main sebentar 😭",
         caption: "Entah bagaimana, kami akhirnya bermain selama tiga jam. Bahkan lebih deh kayaknya.",
@@ -31,7 +9,7 @@ const galleryPhotos = [
     },
 
     {
-        image: "assets/6b91a6e1-67dc-4f57-8913-80590e73cdf1.jpg",
+        image: "../assets/6b91a6e1-67dc-4f57-8913-80590e73cdf1.jpg",
         game: "🎮 Roblox",
         title: "That was NOT the plan 😭",
         caption: "Awalnya dua cowo itu doang yang mau foto dan berakhir ciwi ciwi ikutan.",
@@ -40,7 +18,7 @@ const galleryPhotos = [
     },
 
     {
-        image: "assets/426c432e-f40e-4bd2-bd26-ce1a7124c4f2.jpg",
+        image: "../assets/426c432e-f40e-4bd2-bd26-ce1a7124c4f2.jpg",
         game: "🏝️ Roblox",
         title: "We somehow survived",
         caption: "Nobody knew what we were doing, but somehow we made it.",
@@ -49,7 +27,7 @@ const galleryPhotos = [
     },
 
     {
-        image: "assets/8279abf0-a5f0-4058-89f4-a58512396d5b.jpg",
+        image: "../assets/8279abf0-a5f0-4058-89f4-a58512396d5b.jpg",
         game: "😂 Roblox",
         title: "The legendary disaster",
         caption: "We laughed more than we actually played. Foto di kesempatan dalam kesempitan.",
@@ -58,7 +36,7 @@ const galleryPhotos = [
     },
 
     {
-        image: "assets/d06e1cf4-3770-44a3-9476-4c66e0997fbb.webp",
+        image: "../assets/d06e1cf4-3770-44a3-9476-4c66e0997fbb.webp",
         game: "🌙 Roblox",
         title: "One last game...",
         caption: "It was never actually the last game. Jangan bilang \"one last game\" lagi ya😭",
@@ -67,7 +45,7 @@ const galleryPhotos = [
     },
 
     {
-        image: "assets/Gemini_Generated_Image_7eyh2k7eyh2k7eyh.png",
+        image: "../assets/Gemini_Generated_Image_7eyh2k7eyh2k7eyh.png",
         game: "🌙 Roblox",
         title: "May it never end",
         caption: "Seneng banget bisa main bareng kalian. Semoga kita bisa main bareng terus.",
@@ -77,7 +55,7 @@ const galleryPhotos = [
 
     
     ,{
-        image: "assets/fe8886f5-d472-419f-b26f-344afee38dea.jpg",
+        image: "../assets/fe8886f5-d472-419f-b26f-344afee38dea.jpg",
         game: "🎮 Roblox",
         title: "Fish it huhu",
         caption: "Seru Banget waktu itu dan bener-bener nggk kenal waktu.",
@@ -86,7 +64,7 @@ const galleryPhotos = [
     }
 
     ,{
-        image: "assets/8807028910_121864768012064_1769618456965.png",
+        image: "../assets/8807028910_121864768012064_1769618456965.png",
         game: "🎮 Roblox",
         title: "Fish it lagi",
         caption: "Jujur kangen ... tapi nggk bisa main bareng lagi.",
@@ -95,7 +73,7 @@ const galleryPhotos = [
     }
 
     ,{
-        image: "assets/f9d07e5f-2bf4-481a-acee-69bb7ead6c98.jpg",
+        image: "../assets/f9d07e5f-2bf4-481a-acee-69bb7ead6c98.jpg",
         game: "🎮 Roblox",
         title: "Menyamar",
         caption: "Bener-bener jadi mbaas nih kita mio😭",
@@ -104,7 +82,7 @@ const galleryPhotos = [
     }
 
     ,{
-        image: "assets/fe9253d2-38c5-435e-9df4-f4a249d54910.jpg",
+        image: "../assets/fe9253d2-38c5-435e-9df4-f4a249d54910.jpg",
         game: "🎮 Roblox",
         title: "Muncak bareng bestie",
         caption: "Kapan kita muncak lagi? dan melewati rintangan bareng lagi?😭",
@@ -112,7 +90,7 @@ const galleryPhotos = [
         date: "2026"
     }
     ,{
-        image: "assets/c7eb586a-b7a2-4604-bed9-52751ccc21f6.jpg",
+        image: "../assets/c7eb586a-b7a2-4604-bed9-52751ccc21f6.jpg",
         game: "🎮 Roblox",
         title: "Muncak bareng bestie jill",
         caption: "Jill dulu kita main gunung nggk kenal waktu ya ...",
@@ -120,7 +98,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/a510d728-ba74-45c5-8639-82cae95bd15a.jpg",
+        image: "../assets/a510d728-ba74-45c5-8639-82cae95bd15a.jpg",
         game: "🎮 Roblox",
         title: "Foto random",
         caption: "I always remember ...",
@@ -129,7 +107,7 @@ const galleryPhotos = [
     }
 
     ,{
-        image: "assets/d0e28840-43d0-4552-9aba-c88a448e556d.jpg",
+        image: "../assets/d0e28840-43d0-4552-9aba-c88a448e556d.jpg",
         game: "🎮 Roblox",
         title: "Bersama kak kiki yuhu",
         caption: "Donator kak kiki yang baik hati, semoga kita bisa main bareng lagi ya kak😭",
@@ -137,7 +115,7 @@ const galleryPhotos = [
         date: "2025"
     }
         ,{
-        image: "assets/7adf5c01-b070-4d21-8397-b3ed1f265ba5.jpg",
+        image: "../assets/7adf5c01-b070-4d21-8397-b3ed1f265ba5.jpg",
         game: "🎮 Roblox",
         title: "I MISS U",
         caption: "Kamu temen pertama ku di roblox deh ...",
@@ -146,7 +124,7 @@ const galleryPhotos = [
     }
 
         ,{
-        image: "assets/8105746f-9259-40ab-92d0-128ac98495c0.jpg",
+        image: "../assets/8105746f-9259-40ab-92d0-128ac98495c0.jpg",
         game: "🎮 Roblox",
         title: "I will never forget you",
         caption: "We don't play Roblox together much anymore, but you're still one of my favorite people ...",
@@ -154,7 +132,7 @@ const galleryPhotos = [
         date: "2025"
     }
         ,{
-        image: "assets/f7997d78-8f8b-4834-8c08-76f3c67cb76a.jpg",
+        image: "../assets/f7997d78-8f8b-4834-8c08-76f3c67cb76a.jpg",
         game: "🎮 Roblox",
         title: "Ghost...",
         caption: "Ghostfinn atau ghosting?",
@@ -162,7 +140,7 @@ const galleryPhotos = [
         date: "2025"
     }
      ,{
-        image: "assets/7f2b283b-42cf-4bbc-9e26-57ca31d29411.jpg",
+        image: "../assets/7f2b283b-42cf-4bbc-9e26-57ca31d29411.jpg",
         game: "🎮 Roblox",
         title: "Muncakk",
         caption: "Bareng kak jie dan jill nih",
@@ -170,7 +148,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/1c505caf-e794-4953-bb07-f13d2ccdc20c.jpg",
+        image: "../assets/1c505caf-e794-4953-bb07-f13d2ccdc20c.jpg",
         game: "🎮 Roblox",
         title: "Muncak lagi dan lagi",
         caption: "Tenang aja, bang xoul masuk juga kok",
@@ -178,7 +156,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/37f54a3c-5e01-4bab-92af-a0edea2ce368.jpg",
+        image: "../assets/37f54a3c-5e01-4bab-92af-a0edea2ce368.jpg",
         game: "🎮 Roblox",
         title: "My dino",
         caption: "Bestie ku yang satu ini bener-bener nggk bisa di lupain deh😭",
@@ -187,7 +165,7 @@ const galleryPhotos = [
     }
 
     ,{
-        image: "assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
+        image: "../assets/268b61fe-20f4-4acf-98ea-29ba5de14f0e.jpg",
         game: "🎮 Roblox",
         title: "Hey ...",
         caption: "Ava mu lucu kali paok",
@@ -195,7 +173,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/8c598ca1-cfe7-4f51-bb09-e08d1f1898f2.jpg",
+        image: "../assets/8c598ca1-cfe7-4f51-bb09-e08d1f1898f2.jpg",
         game: "🎮 Roblox",
         title: "Jangan lupa ke gunung ini ya bestie ku",
         caption: "Ini gampang banget kok, siapin mental aja",
@@ -203,7 +181,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/06bb40ae-7bb4-4bd6-8ade-a7b9f9327f22.jpg",
+        image: "../assets/06bb40ae-7bb4-4bd6-8ade-a7b9f9327f22.jpg",
         game: "🎮 Roblox",
         title: "Cama cepupu",
         caption: "uhuk, dah sibuk kerja nich",
@@ -211,7 +189,7 @@ const galleryPhotos = [
         date: "2025"
     }
         ,{
-        image: "assets/60fbc5d2-6383-4741-be49-8328c41c0897.jpg",
+        image: "../assets/60fbc5d2-6383-4741-be49-8328c41c0897.jpg",
         game: "🎮 Roblox",
         title: "Kak kookiee",
         caption: "Sekarang aku canggung sama donatur ku ini",
@@ -219,7 +197,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/0d9a0947-7397-468c-8517-04ea79b8b5f4.jpg",
+        image: "../assets/0d9a0947-7397-468c-8517-04ea79b8b5f4.jpg",
         game: "🎮 Roblox",
         title: "Bacon",
         caption: "Kita bacon lucu dan imut",
@@ -227,7 +205,7 @@ const galleryPhotos = [
         date: "2025"
     }    
     ,{
-        image: "assets/6af3a885-234f-47dc-8083-b621586d5c1a.jpg",
+        image: "../assets/6af3a885-234f-47dc-8083-b621586d5c1a.jpg",
         game: "🎮 Roblox",
         title: "Mau Bunga?",
         caption: "Ini bunga dari mio, rawr, dan syaa.",
@@ -235,14 +213,14 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/85cd7220-e3f5-4ffa-957b-7c86f8fac016.jpg",
+        image: "../assets/85cd7220-e3f5-4ffa-957b-7c86f8fac016.jpg",
         game: "🎮 Roblox",
         title: "🤏",
         caption: "Aku masukin aja deh",
         people: "Ura/Juan",
         date: "2025"
     }    ,{
-        image: "assets/6027e675-625e-4c47-9c9d-1dd5e5ccf4b0.jpg",
+        image: "../assets/6027e675-625e-4c47-9c9d-1dd5e5ccf4b0.jpg",
         game: "🎮 Roblox",
         title: "Jijil dan syaa",
         caption: "We're bestie forever, semoga kita bisa main bareng lagi ya😭",
@@ -251,7 +229,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/8807028910_85931312520925_1764258003136.png",
+        image: "../assets/8807028910_85931312520925_1764258003136.png",
         game: "🎮 Roblox",
         title: "Rawr dan Paw",
         caption: "sipaling jarang join tapi selalu ditunggu join dia... dulu",
@@ -259,7 +237,7 @@ const galleryPhotos = [
         date: "2025"
     }    
     ,{
-        image: "assets/8807028910_137526408608242_1777889452924.png",
+        image: "../assets/8807028910_137526408608242_1777889452924.png",
         game: "🎮 Roblox",
         title: "Hey ...",
         caption: "ayo muncak lagi besty tapi anu gendong hehee (lyn)",
@@ -268,7 +246,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/8807028910_121864768012064_1769672360760.png",
+        image: "../assets/8807028910_121864768012064_1769672360760.png",
         game: "🎮 Roblox",
         title: "Kangen hutan (?)",
         caption: "Kangen kenangan bareng kalian.",
@@ -277,7 +255,7 @@ const galleryPhotos = [
     }    
     
     ,{
-        image: "assets/9136335981_86954037607818_1779801000689.png",
+        image: "../assets/9136335981_86954037607818_1779801000689.png",
         game: "🎮 Roblox",
         title: "Mount Palung",
         caption: "Kapan ya muncak bareng lagi? semoga kita bisa main bareng lagi ya😭",
@@ -285,7 +263,7 @@ const galleryPhotos = [
         date: "2026"
     }
     ,{
-        image: "assets/9136335981_86954037607818_1779801023151.png",
+        image: "../assets/9136335981_86954037607818_1779801023151.png",
         game: "🎮 Roblox",
         title: "JieSyaMiUt",
         caption: "Jiebell, Syaa, Mio, dan Uta",
@@ -293,7 +271,7 @@ const galleryPhotos = [
         date: "2025"
     }    
     ,{
-        image: "assets/9136335981_119865410252788_1759147761879.png",
+        image: "../assets/9136335981_119865410252788_1759147761879.png",
         game: "🎮 Roblox",
         title: "Awal mula kita kenal",
         caption: "Pertama kali kenal kak",
@@ -302,14 +280,14 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/afb9ab51-d07f-43fc-b226-957789945dec.jpg",
+        image: "../assets/afb9ab51-d07f-43fc-b226-957789945dec.jpg",
         game: "🎮 Roblox",
         title: "My bestfriend in rl",
         caption: "my bubub, my bestie, my everything",
         people: "Syaa, Sitiw",
         date: "2025"
     }    ,{
-        image: "assets/ce0d8721-693e-4b09-b52e-0eebfa716998.jpg",
+        image: "../assets/ce0d8721-693e-4b09-b52e-0eebfa716998.jpg",
         game: "🎮 Roblox",
         title: "Bang twist",
         caption: "Lama kali kita tidak main.",
@@ -317,7 +295,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/ad88d91e-0582-4263-97dd-b3ee304ba730.jpg",
+        image: "../assets/ad88d91e-0582-4263-97dd-b3ee304ba730.jpg",
         game: "🎮 Roblox",
         title: "Mount again",
         caption: "Jill, it's nice to meet you. Let's stay in touch, okay? Let's keep being friends.",
@@ -325,7 +303,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/Screenshot_2026-05-23-21-55-18-722_com.roblox.client.jpg",
+        image: "../assets/Screenshot_2026-05-23-21-55-18-722_com.roblox.client.jpg",
         game: "🎮 Roblox",
         title: "Cp Ava",
         caption: "couplean ava ada wong",
@@ -334,7 +312,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/380fb3f5-4fa1-4753-ad30-533735076b2d.png",
+        image: "../assets/380fb3f5-4fa1-4753-ad30-533735076b2d.png",
         game: "🎮 Roblox",
         title: "kekacauan kecil",
         caption: "yang satu ngomong, yang satu ngikut, yang satu lagi entah ngapain😭",
@@ -343,7 +321,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/68d38416-e71c-4d5a-96e9-78235283f711.png",
+        image: "../assets/68d38416-e71c-4d5a-96e9-78235283f711.png",
         game: "❤ Roblox",
         title: "VD❤",
         caption: "Lagi nunggu match mulai dan kita foto dulu deh.",
@@ -352,7 +330,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/af96cc0f-ccd0-4c43-903f-35ff1e361084.jpg",
+        image: "../assets/af96cc0f-ccd0-4c43-903f-35ff1e361084.jpg",
         game: "💃 Roblox",
         title: "Cute Squad, Creepy Vibe 🍓✨",
         caption: "Peta boleh serem, yang penting outfit tetep kece dan mabar bareng temen sefrekuensi! 🤍👻",
@@ -361,7 +339,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/7807029164_121864768012064_1768665147432.png",
+        image: "../assets/7807029164_121864768012064_1768665147432.png",
         game: "🎮 Roblox",
         title: "Fish it",
         caption: "Mau Pamer ikan lucu.",
@@ -369,7 +347,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/8807028910_108566984388890_1764942193722.png",
+        image: "../assets/8807028910_108566984388890_1764942193722.png",
         game: "🎮 Roblox",
         title: "Mount",
         caption: "Ini lupa gunung apa, dan menjadi anomali😭.",
@@ -377,7 +355,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/7807029164_93978595733734_1763384978433.png",
+        image: "../assets/7807029164_93978595733734_1763384978433.png",
         game: "🎮 Roblox",
         title: "Awal Main Violence District",
         caption: "Kangen lobby ini deh.",
@@ -385,7 +363,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/7807029164_93978595733734_1761746089790.png",
+        image: "../assets/7807029164_93978595733734_1761746089790.png",
         game: "🎮 Roblox",
         title: "Miss",
         caption: "Kangen keseruan yang dulu.",
@@ -393,7 +371,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/7807029164_95086026345735_1752123413378.png",
+        image: "../assets/7807029164_95086026345735_1752123413378.png",
         game: "🎮 Roblox",
         title: "Jangan lupakan aku",
         caption: "Jangan lupakan aku ya my bestie kuu.",
@@ -401,7 +379,7 @@ const galleryPhotos = [
         date: "2025"
     }
     ,{
-        image: "assets/RobloxScreenShot20251107_185501061.png",
+        image: "../assets/RobloxScreenShot20251107_185501061.png",
         game: "🎮 Roblox",
         title: "Main bersama",
         caption: "Terakhir main gunung bareng kak kiki.",
@@ -410,7 +388,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/7807029164_130444125462169_1787755587418_1.png",
+        image: "../assets/7807029164_130444125462169_1787755587418_1.png",
         game: "🎮 Roblox",
         title: "Penakluk Puncak MT Daun Roblox",
         caption: "mt daun peak! ava-nya pada anomali tapi tetep nyampe puncak.",
@@ -419,7 +397,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/7807029164_130444125462169_1787755487422.png",
+        image: "../assets/7807029164_130444125462169_1787755487422.png",
         game: "🎮 Roblox",
         title: "Ekspedisi mt daun ter-gajelas",
         caption: "vibes muncak kali ini agak laen. Tapi tetep seru kok.",
@@ -428,7 +406,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/8af88afd-3938-4340-b0f4-9a8ead4f3650.jpg",
+        image: "../assets/8af88afd-3938-4340-b0f4-9a8ead4f3650.jpg",
         game: "🎮 Roblox",
         title: "VD terus",
         caption: "Dengan teman virtual yang baru.",
@@ -436,7 +414,7 @@ const galleryPhotos = [
         date: "2026"
     }
     ,{
-        image: "assets/2a2ccd1e-f5e2-4f6a-a506-43d5dd1c52d1.png",
+        image: "../assets/2a2ccd1e-f5e2-4f6a-a506-43d5dd1c52d1.png",
         game: "🎮 Roblox",
         title: "Soft spoken",
         caption: "Dengan teman virtual yang baru yang soft spoken.",
@@ -444,7 +422,7 @@ const galleryPhotos = [
         date: "2026"
     }
     ,{
-        image: "assets/f82463f3-46c1-4f67-bd1c-8db8c35162ce.png",
+        image: "../assets/f82463f3-46c1-4f67-bd1c-8db8c35162ce.png",
         game: "🎮 Roblox",
         title: "No caption",
         caption: "Salah satu kenangan seru kita.",
@@ -453,7 +431,7 @@ const galleryPhotos = [
     }
     
     ,{
-        image: "assets/9136335981_97466273052843_1785941402518.png",
+        image: "../assets/9136335981_97466273052843_1785941402518.png",
         game: "🎮 Roblox",
         title: "triple trouble",
         caption: "the silly trio will always have my heart.",
@@ -461,24 +439,63 @@ const galleryPhotos = [
         date: "2026"
     }        
     ,{
-        image: "assets/Screenshot_2026-08-29_145458.png",
+        image: "../assets/Screenshot_2026-08-29_145458.png",
         game: "🎮 Roblox",
         title: "Two random people",
         caption: " Idenya foto berlima sih, malah nambah 2 😭😭.",
         people: "Syaa, Kett, Niel, Zabe, Ken, Stranger",
         date: "2026"
     } 
+    ,{
+        image: "../assets/9136335981_106188247328848_1788030312562.png",
+        game: "🎮 Roblox",
+        title: "Gas Sampai Puncak",
+        caption: " gas pol main trail ke puncak gunung! 🔥.",
+        people: "Zabe, Niel, Kak Jiebell",
+        date: "Agustus 2026"
+    }
+    ,{
+        image: "../assets/9136335981_110519489629511_1788025091726.png",
+        game: "🎮 Roblox",
+        title: "Off-Road Legends 🚙⛰️",
+        caption: "Trailblazing with my bestie. These dirt roads and mountain paths are no match for us!",
+        people: "Zabe, Kak Jiebell, Syaa, Niel",
+        date: "Agustus 2026"
+    }
+    ,{
+        image: "../assets/9136335981_102452693873995_1788032419028.png",
+        game: "🎮 Roblox",
+        title: "Mountain Trailblazers",
+        caption: "Kuda besi siap, mental mantap. Squad offroad siap naklukin semua jalur terjal!.",
+        people: "Syaa, kak Jiebell, Zabe, Niel",
+        date: "Agustus 2026"
+    }
+    ,{
+        image: "../assets/9103878717_121864768012064_1774282912011.png",
+        game: "🎮 Roblox",
+        title: "Tangkapan Legendaris 🐟",
+        caption: "Awalnya cuma iseng mancing nyantai, malah narik monster laut.",
+        people: "Syaa, Aluna",
+        date: "2025"
+    }
+    ,{
+        image: "../assets/9103878717_121864768012064_1774284476586.png",
+        game: "🎮 Roblox",
+        title: "Raja Laut Terpancing! 🔥",
+        caption: "Monster laut aja bisa kita tarik, apalagi cuma ombak kecil. Pancing mania mantap! ✨.",
+        people: "Syaa, Aluna",
+        date: "2025"
+    }
+    ,{
+        image: "../assets/Screenshot_20260831-171413.png",
+        game: "🎮 MLBB",
+        title: "When ya imo",
+        caption: "Tidak tau apa yang mau dipamerin",
+        people: "Syaa, Forsther",
+        date: "2025"
+    }
 
 ];
-
-
-/* =========================================================
-   DATE HELPER
-   -----------------------------------------------------------
-   "date" boleh diisi "Agustus 2026" atau cuma "2026" — fungsi
-   ini narik 4 digit tahunnya aja, dipakai buat filter supaya
-   chip-nya tetap per tahun (bukan pecah per bulan).
-========================================================= */
 
 function extractYear(dateStr) {
 
@@ -661,7 +678,7 @@ function buildGalleryGrid() {
 
             if (!image.dataset.fallback) {
                 image.dataset.fallback = "true";
-                image.src = "assets/placeholder.jpg";
+                image.src = "../assets/placeholder.jpg";
             }
 
         });
@@ -732,6 +749,61 @@ function buildGalleryGrid() {
    LIGHTBOX
 ========================================================= */
 
+function toAlbumSlug(title) {
+    return String(title || "")
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, "")
+        .replace(/\s+/g, "-")
+        .replace(/-+/g, "-");
+}
+
+const KNOWN_ALBUM_IDS = new Set([
+    "niatnya-cuma-main-sebentar",
+    "that-was-not-the-plan",
+    "we-somehow-survived",
+    "the-legendary-disaster",
+    "one-last-game",
+    "may-it-never-end",
+    "fish-it-huhu",
+    "fish-it-lagi",
+    "menyamar",
+    "muncak-bareng-bestie",
+    "muncak-bareng-bestie-jill",
+    "foto-random",
+    "bersama-kak-kiki-yuhu",
+    "i-miss-u",
+    "i-will-never-forget-you",
+    "ghost",
+    "muncakk",
+    "muncak-lagi-dan-lagi",
+    "my-dino",
+    "hey",
+    "jangan-lupakan-aku",
+    "cama-cepupu",
+    "kak-kookiee",
+    "bacon",
+    "mau-bunga",
+    "triple-trouble",
+    "two-random-people",
+    "rawrr-dan-paw",
+    "mount-palung",
+    "jiesyamiut",
+    "awal-mula-kita-kenal",
+    "my-bestfriend-in-rl",
+    "bang-twist",
+    "mount-again",
+    "cp-ava",
+    "kekacauan-kecil",
+    "vd",
+    "cute-squad-creepy-vibe",
+    "fish-it",  
+    "mount",
+    "awal-main-violence-district",
+    "miss",
+
+]);
+
 function openLightbox(index) {
 
     const photo = visiblePhotos[index];
@@ -773,10 +845,13 @@ function closeLightbox() {
         "true"
     );
 
+    if (lightboxDetailButton) {
+        lightboxDetailButton.hidden = true;
+    }
+
     document.body.classList.remove("modal-open");
 
 }
-
 
 lightboxClose.addEventListener(
     "click",
@@ -794,7 +869,7 @@ lightboxImage.addEventListener("error", () => {
 
     if (!lightboxImage.dataset.fallback) {
         lightboxImage.dataset.fallback = "true";
-        lightboxImage.src = "assets/placeholder.jpg";
+        lightboxImage.src = "../assets/placeholder.jpg";
     }
 
 });
