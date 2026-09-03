@@ -6,10 +6,10 @@
 
     <meta
         name="description"
-        content="My Favorite Memories — favorite moments from Our Roblox Memories."
+        content="Daftar teman-teman di Our Roblox Memories."
     >
 
-    <title>My Favorites ♥️ | Our Roblox Memories</title>
+    <title>Members 👥 | Our Roblox Memories</title>
 
     <!-- Google Fonts: maximum 2 fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +46,7 @@
         <!-- NAVIGATION -->
         <header class="site-header">
 
-            <nav class="navbar container" aria-label="Main navigation">
+            <nav class="navbar container gallery-navbar" aria-label="Main navigation">
 
                 <!-- LOGO -> back to home -->
                 <a href="home.html#memories" class="logo">
@@ -62,8 +62,8 @@
                     <a href="about.html" class="icon-button" aria-label="Statistics" title="Statistics">
                         📊
                     </a>
-                    <a href="members.html" class="icon-button" aria-label="Members" title="Members">
-                        👥
+                    <a href="favorites.html" class="icon-button" aria-label="My Favorites" title="My Favorites">
+                        ♥️
                     </a>
                     <a href="guestbook.html" class="icon-button" aria-label="Guest Book" title="Guest Book">
                         📝
@@ -82,31 +82,32 @@
         <main>
 
             <!-- =================================================
-                 FAVORITES SECTION
+                 MEMBERS SECTION
             ================================================== -->
-            <section class="section favorites-section" id="favoritesSection">
+            <section class="section members-page-section" id="membersSection">
 
                 <div class="container">
 
-                    <div class="favorites-hero">
-                        <h1>My Favorite Memories ♥️</h1>
-                        <p>Kenangan-kenangan spesial yang paling berharga</p>
+                    <div class="about-hero">
+                        <h1>Our Members 👥</h1>
+                        <p>Orang-orang yang telah membuat kenangan bersama kita.</p>
                     </div>
 
-                    <div class="memory-grid" id="favoritesGrid">
-                        <!-- Favorite memories will be injected by favorites.js -->
-                    </div>
-
-                    <p class="favorites-empty-note" id="favoritesEmptyNote">
-                        Belum ada favorit yet 😭 
-                        <a href="home.html">Kembali ke Home</a> untuk add favorit dengan klik ♥️
-                    </p>
+                    <section class="members-section">
+                        <div class="members-grid" id="membersList">
+                            <!-- Members with photos will be injected by members-page.js -->
+                        </div>
+                    </section>
 
                     <!-- BACK BUTTON -->
-                    <div class="favorites-actions">
-                        <a href="home.html" class="back-home-link">
-                            <span>🏠</span>
-                            Kembali ke Home
+                    <div class="about-actions">
+                        <a href="about.html" class="back-home-link">
+                            <span>📊</span>
+                            Lihat Statistik
+                        </a>
+                        <a href="gallery.html" class="back-home-link">
+                            <span>📸</span>
+                            Kembali ke Galeri
                         </a>
                     </div>
 
@@ -126,16 +127,18 @@
                 ✦ ♡ 🎮 ✧ ⭐
             </div>
 
-            <h2>Our Roblox Memories 🎮</h2>
+            <h2>
+                Our Roblox Memories 🎮
+            </h2>
 
             <p>
-                Sebuah scrapbook digital kecil untuk kenangan bermain Roblox bersama.
+                Dibuat dengan 💕 untuk mengenang persahabatan yang indah.
             </p>
 
             <div class="footer-line"></div>
 
             <small class="footer-credit">
-                Made with love ♡ by friends
+                Our Roblox Memories ♡
             </small>
 
         </footer>
@@ -143,43 +146,11 @@
     </div>
 
 
-    <!-- MODALS (copied from home.html for consistency) -->
-
-    <!-- =====================================================
-         LIGHTBOX MODAL
-    ====================================================== -->
-    <div class="modal" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
-
-        <div class="modal-backdrop" aria-hidden="true"></div>
-
-        <div class="lightbox-content">
-
-            <button class="modal-close" id="lightboxClose" aria-label="Close lightbox">
-                ✕
-            </button>
-
-            <img class="lightbox-image" id="lightboxImage" alt="" />
-
-            <div class="lightbox-info">
-                <span id="lightboxGame"></span>
-                <h2 id="lightboxTitle"></h2>
-                <time id="lightboxDate"></time>
-                <p id="lightboxCaption"></p>
-                <span class="lightbox-people" id="lightboxPeople"></span>
-            </div>
-
-        </div>
-
-    </div>
-
-
     <script src="../js/dark-mode.js"></script>
     <script src="../js/scroll-reveal.js"></script>
     <script src="../js/guestbook-notify.js"></script>
-    <script src="../js/favorites-core.js"></script>
-    <script src="../js/photos-data.js"></script>
-    <script src="../js/favorites.js"></script>
+    <script src="../js/members.js"></script>
+    <script src="../js/members-page.js"></script>
 
 </body>
-
 </html>

@@ -533,6 +533,8 @@ body.dark-mode .site-header {
 
 .navbar-actions {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
     margin-left: auto;
@@ -2718,7 +2720,9 @@ body.dark-mode .modal-backdrop {
 
 .about-actions {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 14px;
     margin-top: 40px;
 }
 
@@ -2768,4 +2772,160 @@ body.dark-mode .top-person-chip {
 
 body.dark-mode .nav-badge {
     border-color: var(--paper);
+}
+
+
+/* =========================================================
+   DARK MODE — TEXT-ON-LIGHT-CARD FIXES
+   Banyak kartu di atas pakai background putih HARDCODE (bukan
+   variabel), jadi waktu dark mode teks ganti jadi terang tapi
+   kartunya tetap terang → teks nggak kebaca. Ini nambahin versi
+   gelap buat tiap kartu itu, biar teksnya selalu kontras.
+========================================================= */
+
+body.dark-mode .hero-paper {
+    background:
+        linear-gradient(
+            rgba(42, 35, 48, 0.75),
+            rgba(42, 35, 48, 0.6)
+        );
+    border-color: rgba(220, 210, 242, 0.15);
+}
+
+body.dark-mode .message-card-inner {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(42, 35, 48, 0.85),
+            rgba(35, 30, 42, 0.7)
+        );
+    border-color: rgba(220, 210, 242, 0.15);
+}
+
+body.dark-mode .secondary-button {
+    color: var(--text);
+    background: rgba(42, 35, 48, 0.75);
+}
+
+body.dark-mode .back-home-link {
+    color: var(--text);
+    background: rgba(42, 35, 48, 0.75);
+}
+
+body.dark-mode .filter-chip {
+    color: var(--text);
+    background: rgba(42, 35, 48, 0.75);
+}
+
+body.dark-mode .gallery-filters-months .filter-chip {
+    background: rgba(42, 35, 48, 0.5);
+}
+
+body.dark-mode .timeline-card {
+    color: var(--text);
+    background: rgba(42, 35, 48, 0.7);
+}
+
+body.dark-mode .wish-card {
+    color: var(--text);
+    background: rgba(42, 35, 48, 0.7);
+}
+
+body.dark-mode .secret-modal-card {
+    border-color: rgba(220, 210, 242, 0.15);
+}
+
+body.dark-mode .photo-expand {
+    background: rgba(26, 22, 32, 0.88);
+    border-color: rgba(220, 210, 242, 0.15);
+}
+
+body.dark-mode .modal-close {
+    background: rgba(26, 22, 32, 0.9);
+    color: var(--text);
+}
+
+body.dark-mode .lightbox-detail-button {
+    background: rgba(26, 22, 32, 0.8);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   PHOTOS PER YEAR (about.html)
+========================================================= */
+
+.year-breakdown-section {
+    margin-bottom: 60px;
+}
+
+.year-breakdown-section h2 {
+    font-family: var(--heading-font);
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    color: var(--purple-dark);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.year-breakdown-list {
+    max-width: 560px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.year-breakdown-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 64px;
+    align-items: center;
+    gap: 12px;
+}
+
+.year-breakdown-label {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--purple-dark);
+}
+
+.year-breakdown-bar-wrap {
+    height: 14px;
+    border-radius: 999px;
+    background: rgba(129, 112, 169, 0.12);
+    overflow: hidden;
+}
+
+body.dark-mode .year-breakdown-bar-wrap {
+    background: rgba(220, 210, 242, 0.1);
+}
+
+.year-breakdown-bar {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--purple), var(--pink));
+    transition: width 0.6s ease;
+}
+
+.year-breakdown-count {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-align: right;
+}
+
+.top-people-note {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    max-width: 480px;
+    margin: 0 auto 20px;
+}
+
+
+/* =========================================================
+   MEMBERS PAGE
+========================================================= */
+
+.members-page-section .members-grid {
+    margin-top: 10px;
 }
