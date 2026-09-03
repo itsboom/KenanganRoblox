@@ -69,18 +69,12 @@ const membersList = [
         name: "Vin",
         photo: "../assets/members/vin.jpg",
         role: "Squad Member 🎮",
-        bio: "Penyintas petualangan"
+        bio: "Old friend"
     },
+
     {
-        id: "ifa",
-        name: "ifa",
-        photo: "../assets/members/ifa.jpg",
-        role: "Squad Member 🎮",
-        bio: "Teman yang gokil"
-    },
-    {
-        id: "sitiw",
-        name: "Sitiw",
+        id: "siti",
+        name: "Siti",
         photo: "../assets/members/sitiw.jpg",
         role: "Bestfriend (RL) 💕",
         bio: "Sahabat di dunia nyata"
@@ -97,7 +91,7 @@ const membersList = [
         name: "Kak Elin (Teh Elin)",
         photo: "../assets/members/kak-elin.jpg",
         role: "Kakak 💫",
-        bio: "Teman kak kiki"
+        bio: "my sepupu"
     },
     {
         id: "bang-rezz",
@@ -118,7 +112,7 @@ const membersList = [
         name: "Juan (Ura)",
         photo: "../assets/members/juan.jpg",
         role: "Squad Member 🎮",
-        bio: "Ura/Juan - teman yang seru"
+        bio: "Teman yang seru"
     },
     {
         id: "bang-xoul",
@@ -126,13 +120,6 @@ const membersList = [
         photo: "../assets/members/bang-xoul.jpg",
         role: "Squad Member 🎮",
         bio: "Teman dari muncak"
-    },
-    {
-        id: "admin",
-        name: "Admin",
-        photo: "../assets/members/admin.jpg",
-        role: "Guide 🗻",
-        bio: "Pemandu di gunung"
     },
     {
         id: "aluna",
@@ -163,8 +150,8 @@ const membersList = [
         bio: "Teman penakluk puncak"
     },
     {
-        id: "desmond",
-        name: "Desmond",
+        id: "desmon",
+        name: "Desmon",
         photo: "../assets/members/desmond.jpg",
         role: "Squad Member 🎮",
         bio: "Teman kekacauan"
@@ -202,6 +189,6 @@ const membersList = [
         name: "Forsther",
         photo: "../assets/members/forsther.jpg",
         role: "Squad Member 🎮",
-        bio: "Teman dari MLBB"
+        bio: "Teman rl nih bos"
     }
 ];
