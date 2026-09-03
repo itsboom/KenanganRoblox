@@ -93,6 +93,12 @@ const confettiContainer = document.getElementById("confettiContainer");
 
 
 /* =========================================================
+   FAVORITES & DARK MODE now live in favorites-core.js and
+   dark-mode.js (shared across every page — see those files).
+========================================================= */
+
+
+/* =========================================================
    MOBILE NAVIGATION
 ========================================================= */
 
@@ -105,10 +111,12 @@ function toggleMobileMenu() {
     );
 }
 
-menuToggle.addEventListener(
-    "click",
-    toggleMobileMenu
-);
+if (menuToggle) {
+    menuToggle.addEventListener(
+        "click",
+        toggleMobileMenu
+    );
+}
 
 
 /* Close mobile menu after clicking a link */
@@ -397,17 +405,22 @@ memoryCards.forEach((card) => {
 });
 
 
-lightboxClose.addEventListener(
-    "click",
-    closeLightbox
-);
+if (lightboxClose) {
+    lightboxClose.addEventListener(
+        "click",
+        closeLightbox
+    );
+}
 
 
 /* Close lightbox by clicking backdrop */
 
-lightbox
-    .querySelector(".modal-backdrop")
-    .addEventListener("click", closeLightbox);
+if (lightbox) {
+    const lightboxBackdrop = lightbox.querySelector(".modal-backdrop");
+    if (lightboxBackdrop) {
+        lightboxBackdrop.addEventListener("click", closeLightbox);
+    }
+}
 
 
 /* =========================================================
@@ -515,42 +528,53 @@ function closeRandomMemory() {
 }
 
 
-randomMemoryBtn.addEventListener(
-    "click",
-    showRandomMemory
-);
+if (randomMemoryBtn) {
+    randomMemoryBtn.addEventListener(
+        "click",
+        showRandomMemory
+    );
+}
 
-anotherMemoryBtn.addEventListener(
-    "click",
-    showRandomMemory
-);
+if (anotherMemoryBtn) {
+    anotherMemoryBtn.addEventListener(
+        "click",
+        showRandomMemory
+    );
+}
 
-randomClose.addEventListener(
-    "click",
-    closeRandomMemory
-);
-
-randomModal
-    .querySelector(".modal-backdrop")
-    .addEventListener(
+if (randomClose) {
+    randomClose.addEventListener(
         "click",
         closeRandomMemory
     );
+}
+
+if (randomModal) {
+    const randomBackdrop = randomModal.querySelector(".modal-backdrop");
+    if (randomBackdrop) {
+        randomBackdrop.addEventListener(
+            "click",
+            closeRandomMemory
+        );
+    }
+}
 
 
 /* Random image fallback */
 
-randomImage.addEventListener("error", () => {
+if (randomImage) {
+    randomImage.addEventListener("error", () => {
 
-    if (!randomImage.dataset.fallback) {
+        if (!randomImage.dataset.fallback) {
 
-        randomImage.dataset.fallback = "true";
+            randomImage.dataset.fallback = "true";
 
-        randomImage.src = "../assets/placeholder.jpg";
+            randomImage.src = "../assets/placeholder.jpg";
 
-    }
+        }
 
-});
+    });
+}
 
 
 /* =========================================================
@@ -591,15 +615,19 @@ function closeSecretMessage() {
 }
 
 
-secretMessageBtn.addEventListener(
-    "click",
-    openSecretMessage
-);
+if (secretMessageBtn) {
+    secretMessageBtn.addEventListener(
+        "click",
+        openSecretMessage
+    );
+}
 
-secretClose.addEventListener(
-    "click",
-    closeSecretMessage
-);
+if (secretClose) {
+    secretClose.addEventListener(
+        "click",
+        closeSecretMessage
+    );
+}
 
 secretModal
     .querySelector(".modal-backdrop")
@@ -755,4 +783,73 @@ function createConfetti(amount = 40) {
 
     }
 
+}
+
+
+/* =========================================================
+   SEARCH & FILTER MEMORIES
+========================================================= */
+
+const memorySearchInput = document.getElementById("memorySearch");
+const memoryGrid = document.getElementById("memoryGrid");
+
+function filterMemories(searchTerm) {
+    if (!memoryGrid) return;
+
+    const cards = memoryGrid.querySelectorAll(".memory-card");
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+        const title = card.querySelector("h3")?.textContent || "";
+        const game = card.querySelector(".memory-game")?.textContent || "";
+        const people = card.querySelector(".memory-people")?.textContent || "";
+        const caption = card.querySelector("p")?.textContent || "";
+
+        const searchLower = searchTerm.toLowerCase();
+        const matches =
+            title.toLowerCase().includes(searchLower) ||
+            game.toLowerCase().includes(searchLower) ||
+            people.toLowerCase().includes(searchLower) ||
+            caption.toLowerCase().includes(searchLower);
+
+        if (matches) {
+            card.style.display = "";
+            visibleCount++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    // Show/hide empty state if needed
+    if (visibleCount === 0 && memoryGrid) {
+        let emptyMsg = memoryGrid.parentElement.querySelector(".memories-empty-note");
+        if (!emptyMsg) {
+            emptyMsg = document.createElement("p");
+            emptyMsg.className = "memories-empty-note";
+            emptyMsg.textContent = "Tidak ada kenangan dengan pencarian tersebut 😔";
+            memoryGrid.parentElement.appendChild(emptyMsg);
+        }
+        emptyMsg.hidden = false;
+    } else {
+        const emptyMsg = memoryGrid.parentElement.querySelector(".memories-empty-note");
+        if (emptyMsg) emptyMsg.hidden = true;
+    }
+}
+
+if (memorySearchInput) {
+    memorySearchInput.addEventListener("input", (e) => {
+        filterMemories(e.target.value);
+    });
+}
+
+
+/* =========================================================
+   FAVORITE BUTTON FUNCTIONALITY
+   (uses attachFavoriteButtons() from favorites-core.js)
+========================================================= */
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => attachFavoriteButtons());
+} else {
+    attachFavoriteButtons();
 }

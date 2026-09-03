@@ -6,10 +6,10 @@
 
     <meta
         name="description"
-        content="Semua foto kenangan kita — galeri lengkap dari Our Roblox Memories."
+        content="My Favorite Memories — favorite moments from Our Roblox Memories."
     >
 
-    <title>Semua Foto Kita 📸 | Our Roblox Memories</title>
+    <title>My Favorites ♥️ | Our Roblox Memories</title>
 
     <!-- Google Fonts: maximum 2 fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,10 +46,10 @@
         <!-- NAVIGATION -->
         <header class="site-header">
 
-            <nav class="navbar container gallery-navbar" aria-label="Main navigation">
+            <nav class="navbar container" aria-label="Main navigation">
 
                 <!-- LOGO -> back to home -->
-                <a href="home.html" class="logo">
+                <a href="home.html#memories" class="logo">
                     <span>🎮</span>
                     Our Memories
                 </a>
@@ -59,9 +59,6 @@
                     <button id="darkModeToggle" class="icon-button" aria-label="Toggle dark mode" title="Dark Mode">
                         🌙
                     </button>
-                    <a href="favorites.html" class="icon-button" aria-label="My Favorites" title="My Favorites">
-                        ♥️
-                    </a>
                     <a href="guestbook.html" class="icon-button" aria-label="Guest Book" title="Guest Book">
                         📝
                         <span class="nav-badge" id="guestbookBadge" hidden></span>
@@ -76,46 +73,33 @@
         <main>
 
             <!-- =================================================
-                 PHOTO GRID
+                 FAVORITES SECTION
             ================================================== -->
-            <section class="section gallery-grid-section" id="galleryGrid">
+            <section class="section favorites-section" id="favoritesSection">
 
                 <div class="container">
 
-                    <div class="gallery-hero-actions">
+                    <div class="favorites-hero">
+                        <h1>My Favorite Memories ♥️</h1>
+                        <p>Kenangan-kenangan spesial yang paling berharga</p>
+                    </div>
+
+                    <div class="memory-grid" id="favoritesGrid">
+                        <!-- Favorite memories will be injected by favorites.js -->
+                    </div>
+
+                    <p class="favorites-empty-note" id="favoritesEmptyNote">
+                        Belum ada favorit yet 😭 
+                        <a href="home.html">Kembali ke Home</a> untuk add favorit dengan klik ♥️
+                    </p>
+
+                    <!-- BACK BUTTON -->
+                    <div class="favorites-actions">
                         <a href="home.html" class="back-home-link">
                             <span>🏠</span>
-                            Home
+                            Kembali ke Home
                         </a>
                     </div>
-
-                    <div class="gallery-filters" id="galleryFilters" aria-label="Filter foto berdasarkan tahun">
-                        <!-- Year chips are injected by gallery.js -->
-                    </div>
-
-                    <div class="gallery-filters gallery-filters-months" id="galleryMonthFilters" aria-label="Filter foto berdasarkan bulan" hidden>
-                        <!-- Month chips are injected by gallery.js, only when a year is selected -->
-                    </div>
-
-                    <!-- SEARCH & FILTER -->
-                    <div class="memories-search-wrap reveal">
-                        <input 
-                            type="text" 
-                            id="gallerySearch" 
-                            class="memory-search-input" 
-                            placeholder="Cari teman atau judul... 🔍"
-                            aria-label="Search gallery photos"
-                        >
-                    </div>
-
-                    <div class="memory-grid" id="galleryGridWrap">
-                        <!-- Photo cards are injected by gallery.js -->
-                    </div>
-
-                    <p class="gallery-empty-note" id="galleryEmptyNote" hidden>
-                        Belum ada foto di sini. Tambahkan foto ke dalam
-                        array <code>galleryPhotos</code> di gallery.js ya!
-                    </p>
 
                 </div>
 
@@ -133,23 +117,16 @@
                 ✦ ♡ 🎮 ✧ ⭐
             </div>
 
-            <h2>
-                That's all the photos... for now 🎮
-            </h2>
+            <h2>Our Roblox Memories 🎮</h2>
 
             <p>
-                Masih akan terus nambah kok.
+                Sebuah scrapbook digital kecil untuk kenangan bermain Roblox bersama.
             </p>
-
-            <a href="home.html" class="back-home-link">
-                <span>🏠</span>
-                Kembali ke Home
-            </a>
 
             <div class="footer-line"></div>
 
             <small class="footer-credit">
-                Our Roblox Memories ♡
+                Made with love ♡ by friends
             </small>
 
         </footer>
@@ -157,58 +134,29 @@
     </div>
 
 
-    <!-- =====================================================
-         LIGHTBOX
-    ====================================================== -->
-    <div
-        class="modal"
-        id="lightbox"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="lightboxTitle"
-        aria-hidden="true"
-    >
+    <!-- MODALS (copied from home.html for consistency) -->
 
-        <div class="modal-backdrop"></div>
+    <!-- =====================================================
+         LIGHTBOX MODAL
+    ====================================================== -->
+    <div class="modal" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+
+        <div class="modal-backdrop" aria-hidden="true"></div>
 
         <div class="lightbox-content">
 
-            <button
-                class="modal-close"
-                id="lightboxClose"
-                type="button"
-                aria-label="Close photo"
-            >
-                ×
+            <button class="modal-close" id="lightboxClose" aria-label="Close lightbox">
+                ✕
             </button>
 
-            <img
-                src="../assets/placeholder.jpg"
-                alt=""
-                id="lightboxImage"
-                class="lightbox-image"
-            >
+            <img class="lightbox-image" id="lightboxImage" alt="" />
 
             <div class="lightbox-info">
-
-                <span id="lightboxGame">
-                    🎮 Roblox
-                </span>
-
-                <h2 id="lightboxTitle">
-                    Memory title
-                </h2>
-
-                <time id="lightboxDate">
-                    August 24, 2026
-                </time>
-
-                <p id="lightboxCaption">
-                    Memory caption.
-                </p>
-
-                <p id="lightboxPeople" class="lightbox-people"></p>
-
+                <span id="lightboxGame"></span>
+                <h2 id="lightboxTitle"></h2>
+                <time id="lightboxDate"></time>
+                <p id="lightboxCaption"></p>
+                <span class="lightbox-people" id="lightboxPeople"></span>
             </div>
 
         </div>
@@ -220,7 +168,8 @@
     <script src="../js/guestbook-notify.js"></script>
     <script src="../js/favorites-core.js"></script>
     <script src="../js/photos-data.js"></script>
-    <script src="../js/gallery.js"></script>
+    <script src="../js/favorites.js"></script>
 
 </body>
+
 </html>

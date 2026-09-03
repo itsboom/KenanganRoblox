@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Guest Book — Leave a message di Our Roblox Memories."
+    >
+
+    <title>Guest Book 📝 | Our Roblox Memories</title>
+
+    <!-- Google Fonts: maximum 2 fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         DECORATIVE FLOATING ELEMENTS
+    ====================================================== -->
+    <div class="floating-decorations" aria-hidden="true">
+        <span class="float-item float-1">✦</span>
+        <span class="float-item float-2">♡</span>
+        <span class="float-item float-3">✧</span>
+        <span class="float-item float-4">⭐</span>
+        <span class="float-item float-5">✨</span>
+        <span class="float-item float-6">🎮</span>
+        <span class="float-item float-7">♡</span>
+    </div>
+
+
+    <!-- =====================================================
+         MAIN WEBSITE
+    ====================================================== -->
+    <div class="site-wrapper is-visible" id="siteWrapper">
+
+        <!-- NAVIGATION -->
+        <header class="site-header">
+
+            <nav class="navbar container" aria-label="Main navigation">
+
+                <!-- LOGO -> back to home -->
+                <a href="home.html" class="logo">
+                    <span>🎮</span>
+                    Our Memories
+                </a>
+
+                <!-- NAVBAR ACTIONS -->
+                <div class="navbar-actions">
+                    <button id="darkModeToggle" class="icon-button" aria-label="Toggle dark mode" title="Dark Mode">
+                        🌙
+                    </button>
+                    <a href="favorites.html" class="icon-button" aria-label="My Favorites" title="My Favorites">
+                        ♥️
+                    </a>
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <!-- =================================================
+                 GUESTBOOK SECTION
+            ================================================== -->
+            <section class="section guestbook-section" id="guestbookSection">
+
+                <div class="container">
+
+                    <div class="guestbook-hero">
+                        <h1>Guest Book 📝</h1>
+                        <p>Tinggalkan pesan untuk kenangan kita bersama!</p>
+                    </div>
+
+                    <!-- FORM -->
+                    <div class="guestbook-form-wrap">
+                        <form class="guestbook-form" id="guestbookForm">
+                            <div class="form-group">
+                                <label for="visitorName">Nama Kamu:</label>
+                                <input type="text" id="visitorName" name="name" placeholder="Siapa nama kamu?" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="visitorMessage">Pesan:</label>
+                                <textarea id="visitorMessage" name="message" placeholder="Tulis pesan untuk kami..." rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="primary-button">
+                                ✨ Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- SUCCESS MESSAGE -->
+                    <div class="form-success" id="formSuccess" hidden>
+                        <div class="success-icon">✅</div>
+                        <p>Terima kasih! Pesan kamu sudah tersimpan 💕</p>
+                    </div>
+
+                    <!-- MESSAGES DISPLAY -->
+                    <div class="guestbook-messages-wrap">
+                        <h2>Pesan Dari Teman-Teman 💬</h2>
+                        <div class="guestbook-messages" id="guestbookMessages">
+                            <!-- Messages will be injected by guestbook.js -->
+                        </div>
+                        <p class="guestbook-empty-note" id="guestbookEmptyNote">
+                            Belum ada pesan yet. Jadilah yang pertama!
+                        </p>
+                    </div>
+
+                    <!-- BACK BUTTON -->
+                    <div class="guestbook-actions">
+                        <a href="home.html" class="back-home-link">
+                            <span>🏠</span>
+                            Kembali ke Home
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+        <footer class="site-footer">
+
+            <div class="footer-decoration" aria-hidden="true">
+                ✦ ♡ 🎮 ✧ ⭐
+            </div>
+
+            <h2>Our Roblox Memories 🎮</h2>
+
+            <p>
+                Sebuah scrapbook digital kecil untuk kenangan bermain Roblox bersama.
+            </p>
+
+            <div class="footer-line"></div>
+
+            <small class="footer-credit">
+                Made with love ♡ by friends
+            </small>
+
+        </footer>
+
+    </div>
+
+
+    <script src="../js/dark-mode.js"></script>
+    <script src="../js/guestbook-notify.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/guestbook.js"></script>
+
+</body>
+
+</html>
