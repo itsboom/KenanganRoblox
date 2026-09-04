@@ -435,6 +435,13 @@ body.dark-mode .primary-button {
 ========================================================= */
 
 .floating-decorations {
+    /* Disembunyikan di layar sempit (HP) — dekorasi ini didesain buat
+       ngambang di ruang kosong pinggir layar desktop yang lebar. Di HP,
+       konten full-width jadi nggak ada ruang kosong, hasilnya malah
+       numpuk aneh di atas kartu. Dinyalain lagi di breakpoint desktop
+       (lihat media query 850px di bawah). */
+    display: none;
+
     position: fixed;
     inset: 0;
 
@@ -536,7 +543,7 @@ body.dark-mode .site-header {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
     margin-left: auto;
 }
 
@@ -636,15 +643,19 @@ body.dark-mode .nav-links a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
-    width: 40px;
-    height: 40px;
-    
+
+    /* Ukuran default = mobile. Sekarang ada 6 ikon di navbar,
+       kalau tetep 40px bakal kepenuhan & pecah ke baris ke-2
+       di layar HP. Dikecilin di sini, dibalikin ke 40px di
+       breakpoint desktop (850px) di bawah. */
+    width: 32px;
+    height: 32px;
+
     border: none;
     border-radius: 50%;
     background: rgba(129, 112, 169, 0.1);
     color: var(--purple-dark);
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     cursor: pointer;
     transition: all 0.25s ease;
 }
@@ -2440,6 +2451,20 @@ body.dark-mode .modal-backdrop {
 ========================================================= */
 
 @media (min-width: 850px) {
+
+    .floating-decorations {
+        display: block;
+    }
+
+    .icon-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .navbar-actions {
+        gap: 10px;
+    }
 
     .menu-toggle {
         display: none;
