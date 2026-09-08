@@ -6,10 +6,10 @@
 
     <meta
         name="description"
-        content="Daftar teman-teman di Our Roblox Memories."
+        content="Submit foto kenangan kamu ke Our Roblox Memories."
     >
 
-    <title>Members 👥 | Our Roblox Memories</title>
+    <title>Submit Foto 📤 | Our Roblox Memories</title>
 
     <!-- Google Fonts: maximum 2 fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +54,6 @@
                     Our Memories
                 </a>
 
-                <!-- NAVBAR ACTIONS -->
                 <button
                     class="menu-toggle"
                     id="menuToggle"
@@ -72,10 +71,10 @@
                     <a href="home.html">Home</a>
                     <a href="gallery.html">Gallery</a>
                     <a href="about.html">Statistics</a>
-                    <a href="members.html" class="is-current">Members</a>
+                    <a href="members.html">Members</a>
                     <a href="favorites.html">Favorites</a>
                     <a href="guestbook.html">Guest Book<span class="nav-badge nav-badge-inline" id="guestbookBadge" hidden></span></a>
-                    <a href="submit.html">Submit Foto</a>
+                    <a href="submit.html" class="is-current">Submit Foto</a>
                 </div>
 
                 <div class="navbar-actions">
@@ -92,29 +91,61 @@
         <main>
 
             <!-- =================================================
-                 MEMBERS SECTION
+                 SUBMIT SECTION
             ================================================== -->
-            <section class="section members-page-section" id="membersSection">
+            <section class="section submit-section" id="submitSection">
 
                 <div class="container">
 
                     <div class="about-hero">
-                        <h1>Our Members 👥</h1>
-                        <p>Orang-orang yang telah membuat kenangan bersama kita.</p>
+                        <h1>Submit Foto Kenangan 📤</h1>
+                        <p>Punya foto momen kalian main bareng? Upload di sini — nanti bakal muncul di galeri setelah di-approve ya 💕</p>
                     </div>
 
-                    <section class="members-section">
-                        <div class="members-grid" id="membersList">
-                            <!-- Members with photos will be injected by members-page.js -->
-                        </div>
-                    </section>
+                    <div class="submit-form-wrap">
+                        <form class="submit-form" id="submitForm">
+
+                            <div class="form-group">
+                                <label for="submitImage">Foto:</label>
+                                <input type="file" id="submitImage" name="image" accept="image/*" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="submitTitle">Judul:</label>
+                                <input type="text" id="submitTitle" name="title" placeholder="Misal: Nggak nyangka bisa se-seru itu" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="submitCaption">Cerita singkat:</label>
+                                <textarea id="submitCaption" name="caption" placeholder="Ceritain momennya dikit..." rows="4" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="submitPeople">Siapa aja yang ada di foto? (pisah pakai koma)</label>
+                                <input type="text" id="submitPeople" name="people" placeholder="Misal: Syaa, Mio, Rawr">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="submitDate">Tahun:</label>
+                                <input type="text" id="submitDate" name="date" placeholder="Misal: 2026" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="submitGame">Game (opsional):</label>
+                                <input type="text" id="submitGame" name="game" placeholder="🎮 Roblox">
+                            </div>
+
+                            <button type="submit" class="primary-button" id="submitButton">
+                                📤 Kirim Foto
+                            </button>
+
+                        </form>
+                    </div>
+
+                    <div class="submit-status" id="submitStatus" hidden></div>
 
                     <!-- BACK BUTTON -->
                     <div class="about-actions">
-                        <a href="about.html" class="back-home-link">
-                            <span>📊</span>
-                            Lihat Statistik
-                        </a>
                         <a href="gallery.html" class="back-home-link">
                             <span>📸</span>
                             Kembali ke Galeri
@@ -156,12 +187,13 @@
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="../js/supabase-config.js"></script>
     <script src="../js/dark-mode.js"></script>
     <script src="../js/scroll-reveal.js"></script>
     <script src="../js/guestbook-notify.js"></script>
     <script src="../js/nav-menu.js"></script>
-    <script src="../js/members.js"></script>
-    <script src="../js/members-page.js"></script>
+    <script src="../js/submit.js"></script>
 
 </body>
 </html>

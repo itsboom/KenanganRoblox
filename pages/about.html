@@ -75,6 +75,7 @@
                     <a href="members.html">Members</a>
                     <a href="favorites.html">Favorites</a>
                     <a href="guestbook.html">Guest Book<span class="nav-badge nav-badge-inline" id="guestbookBadge" hidden></span></a>
+                    <a href="submit.html">Submit Foto</a>
                 </div>
 
                 <div class="navbar-actions">
@@ -118,6 +119,10 @@
                                 <div class="stat-number" id="statYearCount">0</div>
                                 <div class="stat-label">Tahun</div>
                             </div>
+                            <div class="stat-card">
+                                <div class="stat-number" id="statAvgPeople">0</div>
+                                <div class="stat-label">Rata-rata Orang/Foto</div>
+                            </div>
                         </div>
                     </section>
 
@@ -132,6 +137,9 @@
                     <!-- TOP PEOPLE -->
                     <section class="top-memories-section">
                         <h2>🏆 Teman Paling Sering Muncul</h2>
+                        <p class="top-people-note">
+                            (Nggak menghitung Syaa — soalnya dia founder-nya, jelas dia yang paling sering muncul di semua foto 😄)
+                        </p>
                         <div class="top-people" id="topPeopleList">
                             <!-- Top people will be injected by about.js -->
                         </div>
@@ -184,11 +192,14 @@
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="../js/supabase-config.js"></script>
     <script src="../js/dark-mode.js"></script>
     <script src="../js/scroll-reveal.js"></script>
     <script src="../js/guestbook-notify.js"></script>
     <script src="../js/nav-menu.js"></script>
     <script src="../js/photos-data.js"></script>
+    <script src="../js/photos-remote.js"></script>
     <script src="../js/about.js"></script>
 
 </body>

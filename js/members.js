@@ -4,190 +4,204 @@ const membersList = [
     {
         id: "syaa",
         name: "Syaa",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/syaa.jpg",
         role: "Founder 💕",
         bio: "Orang yang mulai scrapbook ini"
     },
     {
         id: "jijill",
         name: "Jijill",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/jijill.jpg",
         role: "Bestfriend 👯",
         bio: "Teman pertama di Roblox"
     },
     {
         id: "mio",
         name: "Mio",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/mio.jpg",
         role: "Squad Member 🎮",
         bio: "Main bareng setiap hari"
     },
     {
         id: "rawr",
         name: "Rawr",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/rawr.jpg",
         role: "Squad Member 🎮",
         bio: "Petualang di Roblox"
     },
     {
         id: "kak-jiebell",
         name: "Kak Jiebell",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/kak-jiebell.jpg",
         role: "Kakak 💫",
         bio: "Pembimbing dalam petualangan"
     },
     {
         id: "dino",
         name: "Dino",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/dino.jpg",
         role: "Squad Member 🎮",
         bio: "Teman favorit"
     },
     {
         id: "yuki",
         name: "Yuki (Paw)",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/yuki.jpg",
         role: "Squad Member 🎮",
         bio: "Teman yang jarang main"
     },
     {
-        id: "vanz",
-        name: "Vanz",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg.jpg",
+        id: "vans",
+        name: "Vans",
+        photo: "../assets/members/vans.jpg",
         role: "Squad Member 🎮",
         bio: "Teman yang seru"
     },
     {
         id: "ket",
         name: "Ket",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/ket.jpg",
         role: "Squad Member 🎮",
         bio: "Teman petualangan"
     },
     {
         id: "vin",
         name: "Vin",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/vin.jpg",
         role: "Squad Member 🎮",
         bio: "Penyintas petualangan"
     },
     {
-        id: "siti",
-        name: "Siti",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        id: "ifa",
+        name: "ifa",
+        photo: "../assets/members/ifa.jpg",
+        role: "Squad Member 🎮",
+        bio: "Teman yang gokil"
+    },
+    {
+        id: "sitiw",
+        name: "Sitiw",
+        photo: "../assets/members/sitiw.jpg",
         role: "Bestfriend (RL) 💕",
         bio: "Sahabat di dunia nyata"
     },
     {
         id: "kak-kiki",
         name: "Kak Kiki",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
-        role: "Donator💎",
-        bio: "Orang baik"
+        photo: "../assets/members/kak-kiki.jpg",
+        role: "Donator 💎",
+        bio: "Pemberi semangat"
     },
     {
         id: "kak-elin",
-        name: "eh Elin",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        name: "Kak Elin (Teh Elin)",
+        photo: "../assets/members/kak-elin.jpg",
         role: "Kakak 💫",
-        bio: "Sepupu"
+        bio: "Teman kak kiki"
     },
     {
         id: "bang-rezz",
         name: "Bang Rezz",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/bang-rezz.jpg",
         role: "Squad Member 🎮",
         bio: "Teman dari Fish It"
     },
     {
         id: "vall",
         name: "Vall",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/vall.jpg",
         role: "Squad Member 🎮",
         bio: "Teman Fish It"
     },
     {
         id: "juan-ura",
         name: "Juan (Ura)",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/juan.jpg",
         role: "Squad Member 🎮",
-        bio: "Old friend"
+        bio: "Ura/Juan - teman yang seru"
     },
     {
         id: "bang-xoul",
         name: "Bang Xoul",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/bang-xoul.jpg",
         role: "Squad Member 🎮",
         bio: "Teman dari muncak"
     },
     {
+        id: "admin",
+        name: "Admin",
+        photo: "../assets/members/admin.jpg",
+        role: "Guide 🗻",
+        bio: "Pemandu di gunung"
+    },
+    {
         id: "aluna",
         name: "Aluna",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/aluna.jpg",
         role: "Squad Member 🎮",
         bio: "Teman pancing"
     },
     {
         id: "bang-cloud",
         name: "Bang Cloud",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/bang-cloud.jpg",
         role: "Squad Member 🎮",
         bio: "Teman Fish It"
     },
     {
         id: "niel",
         name: "Niel",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/niel.jpg",
         role: "Squad Member 🎮",
-        bio: "Teman penakluk puncak"
+        bio: "Teman Virtual District"
     },
     {
         id: "zabe",
         name: "Zabe",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/zabe.jpg",
         role: "Squad Member 🎮",
         bio: "Teman penakluk puncak"
     },
     {
-        id: "desmon",
-        name: "Desmon",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        id: "desmond",
+        name: "Desmond",
+        photo: "../assets/members/desmond.jpg",
         role: "Squad Member 🎮",
         bio: "Teman kekacauan"
     },
     {
         id: "kett",
         name: "Kett",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/kett.jpg",
         role: "Squad Member 🎮",
-        bio: "Teman yapping"
+        bio: "Teman yang baru"
     },
     {
         id: "ken",
         name: "Ken",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/ken.jpg",
         role: "Squad Member 🎮",
-        bio: "Teman baru"
+        bio: "Teman yang misterius"
     },
     {
         id: "riven",
         name: "Riven",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/riven.jpg",
         role: "Squad Member 🎮",
         bio: "Teman soft spoken"
     },
     {
         id: "uta",
         name: "Uta",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/uta.jpg",
         role: "Squad Member 🎮",
         bio: "Teman penakluk gunung"
     },
     {
         id: "forsther",
         name: "Forsther",
-        photo: "../assets/member/99de2dda788780b19d1f8f605bfb577a.jpg",
+        photo: "../assets/members/forsther.jpg",
         role: "Squad Member 🎮",
-        bio: "Teman rl nih boss"
+        bio: "Teman dari MLBB"
     }
 ];

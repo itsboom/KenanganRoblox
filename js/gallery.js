@@ -429,3 +429,13 @@ if (gallerySearchInput) {
         });
     });
 }
+/* =========================================================
+   FOTO SUBMISI DARI ORANG LAIN (Supabase)
+   Begitu photos-remote.js selesai narik foto yang di-approve,
+   render ulang filter + grid biar foto barunya ikut muncul.
+========================================================= */
+
+document.addEventListener("photos-updated", () => {
+    buildGalleryFilters();
+    buildGalleryGrid();
+});

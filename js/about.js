@@ -158,3 +158,15 @@ function buildTopPeople() {
 buildStatistics();
 buildYearBreakdown();
 buildTopPeople();
+
+/* =========================================================
+   FOTO SUBMISI DARI ORANG LAIN (Supabase)
+   Statistik dihitung ulang begitu foto submisi yang di-approve
+   masuk ke galleryPhotos.
+========================================================= */
+
+document.addEventListener("photos-updated", () => {
+    buildStatistics();
+    buildYearBreakdown();
+    buildTopPeople();
+});

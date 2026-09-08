@@ -121,3 +121,13 @@ document.addEventListener("keydown", (event) => {
 if (document.getElementById("favoritesSection")) {
     renderFavorites();
 }
+
+/* =========================================================
+   FOTO SUBMISI DARI ORANG LAIN (Supabase)
+   Kalau foto yang di-favorite ternyata foto submisi (yang baru
+   ke-load belakangan), render ulang biar ke-detect.
+========================================================= */
+
+document.addEventListener("photos-updated", () => {
+    renderFavorites();
+});

@@ -613,6 +613,11 @@ body.dark-mode .site-header {
         transform 0.25s ease;
 }
 
+body.dark-mode .nav-links {
+    background: rgba(26, 22, 32, 0.97);
+    border-color: rgba(220, 210, 242, 0.15);
+}
+
 .nav-links.is-open {
     opacity: 1;
     visibility: visible;
@@ -2997,4 +3002,68 @@ body.dark-mode .year-breakdown-bar-wrap {
     line-height: 1;
 
     vertical-align: middle;
+}
+
+
+/* =========================================================
+   SUBMIT FOTO FORM
+========================================================= */
+
+.submit-form-wrap {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 28px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    background: var(--paper);
+    box-shadow: var(--shadow-soft);
+}
+
+.submit-status {
+    max-width: 520px;
+    margin: 20px auto 0;
+    padding: 14px 18px;
+
+    border-radius: var(--radius-sm);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.submit-status-info {
+    background: rgba(129, 112, 169, 0.12);
+    color: var(--purple-dark);
+}
+
+.submit-status-success {
+    background: rgba(90, 190, 130, 0.15);
+    color: #2f8f5b;
+}
+
+.submit-status-error {
+    background: rgba(255, 90, 90, 0.15);
+    color: #c0392b;
+}
+
+body.dark-mode .submit-status-info {
+    background: rgba(220, 210, 242, 0.1);
+    color: var(--text);
+}
+
+body.dark-mode .submit-status-success {
+    background: rgba(90, 190, 130, 0.15);
+    color: #7fd9a4;
+}
+
+body.dark-mode .submit-status-error {
+    background: rgba(255, 90, 90, 0.18);
+    color: #ff8b7a;
 }
