@@ -321,7 +321,7 @@ const galleryPhotos = [
         game: "🎮 Roblox",
         title: "kekacauan kecil",
         caption: "yang satu ngomong, yang satu ngikut, yang satu lagi entah ngapain😭",
-        people: "Syaa, Desmond, Mio",
+        people: "Syaa, Desmon, Mio",
         date: "Agustus 2026"
     }
     
