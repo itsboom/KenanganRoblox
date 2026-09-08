@@ -32,3 +32,29 @@ if ("IntersectionObserver" in window) {
     });
 
 }
+
+
+/* =========================================================
+   SCROLL-LOCK SAFETY NET
+   -----------------------------------------------------------
+   Modal (lightbox, dll) ngunci scroll body pakai class
+   "modal-open". Kalau karena sebab apapun modal-nya gagal
+   ke-close dengan bener (script lain error, browser HP restore
+   halaman dari cache pas tombol back, dll), class itu bisa
+   nyangkut selamanya → situs kerasa freeze/nggak bisa discroll.
+   Ini nge-cek terus: kalau body dikunci tapi nggak ada modal
+   yang beneran kebuka, kunci-nya dilepas otomatis.
+========================================================= */
+
+function releaseStaleScrollLock() {
+    if (!document.body.classList.contains("modal-open")) return;
+    const anyModalOpen = document.querySelector(".modal.is-open");
+    if (!anyModalOpen) {
+        document.body.classList.remove("modal-open");
+    }
+}
+
+document.addEventListener("click", releaseStaleScrollLock, true);
+document.addEventListener("keyup", releaseStaleScrollLock, true);
+document.addEventListener("touchend", releaseStaleScrollLock, true);
+window.addEventListener("pageshow", releaseStaleScrollLock);

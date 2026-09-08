@@ -620,12 +620,25 @@ body.dark-mode .site-header {
 }
 
 .nav-links a {
+    position: relative;
+
     padding: 10px 12px;
 
     border-radius: 10px;
 
     color: var(--text-light);
     font-size: 0.9rem;
+}
+
+.nav-links a.is-current {
+    color: var(--purple-dark);
+    font-weight: 700;
+    background: var(--lavender-light);
+}
+
+body.dark-mode .nav-links a.is-current {
+    background: rgba(129, 112, 169, 0.2);
+    color: var(--text);
 }
 
 .nav-links a:hover {
@@ -2953,4 +2966,35 @@ body.dark-mode .year-breakdown-bar-wrap {
 
 .members-page-section .members-grid {
     margin-top: 10px;
+}
+
+
+/* =========================================================
+   INLINE GUEST BOOK BADGE (nempel di teks "Guest Book" di
+   dalam nav-links, bukan lagi ikon terpisah)
+========================================================= */
+
+.nav-badge-inline {
+    position: static;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 6px;
+
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+
+    border: none;
+    border-radius: 999px;
+
+    background: #ff1744;
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 700;
+    line-height: 1;
+
+    vertical-align: middle;
 }

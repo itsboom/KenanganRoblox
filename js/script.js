@@ -59,9 +59,6 @@ const memories = [
    DOM ELEMENTS
 ========================================================= */
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
-
 const randomMemoryBtn = document.getElementById("randomMemoryBtn");
 const randomModal = document.getElementById("randomModal");
 const randomClose = document.getElementById("randomClose");
@@ -99,64 +96,9 @@ const confettiContainer = document.getElementById("confettiContainer");
 
 
 /* =========================================================
-   MOBILE NAVIGATION
+   MOBILE NAVIGATION now lives in nav-menu.js (shared across
+   every page — loaded before this file).
 ========================================================= */
-
-function toggleMobileMenu() {
-    const isOpen = navLinks.classList.toggle("is-open");
-
-    menuToggle.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-    );
-}
-
-if (menuToggle) {
-    menuToggle.addEventListener(
-        "click",
-        toggleMobileMenu
-    );
-}
-
-
-/* Close mobile menu after clicking a link */
-
-const navigationItems = navLinks.querySelectorAll("a");
-
-navigationItems.forEach((link) => {
-
-    link.addEventListener("click", () => {
-
-        navLinks.classList.remove("is-open");
-
-        menuToggle.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
-    });
-
-});
-
-
-/* Close mobile menu when clicking outside */
-
-document.addEventListener("click", (event) => {
-
-    const clickedInsideNavigation =
-        navLinks.contains(event.target) ||
-        menuToggle.contains(event.target);
-
-    if (!clickedInsideNavigation) {
-        navLinks.classList.remove("is-open");
-
-        menuToggle.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-    }
-
-});
 
 
 /* =========================================================

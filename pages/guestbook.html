@@ -55,22 +55,32 @@
                 </a>
 
                 <!-- NAVBAR ACTIONS -->
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="home.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">Statistics</a>
+                    <a href="members.html">Members</a>
+                    <a href="favorites.html">Favorites</a>
+                    <a href="guestbook.html" class="is-current">Guest Book<span class="nav-badge nav-badge-inline" id="guestbookBadge" hidden></span></a>
+                </div>
+
                 <div class="navbar-actions">
                     <button id="darkModeToggle" class="icon-button" aria-label="Toggle dark mode" title="Dark Mode">
                         🌙
                     </button>
-                    <a href="about.html" class="icon-button" aria-label="Statistics" title="Statistics">
-                        📊
-                    </a>
-                    <a href="members.html" class="icon-button" aria-label="Members" title="Members">
-                        👥
-                    </a>
-                    <a href="favorites.html" class="icon-button" aria-label="My Favorites" title="My Favorites">
-                        ♥️
-                    </a>
-                    <a href="gallery.html" class="icon-button" aria-label="Gallery" title="Gallery">
-                        📸
-                    </a>
                 </div>
 
             </nav>
@@ -172,7 +182,7 @@
     <script src="../js/dark-mode.js"></script>
     <script src="../js/scroll-reveal.js"></script>
     <script src="../js/guestbook-notify.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/nav-menu.js"></script>
     <script src="../js/guestbook.js"></script>
 
 </body>

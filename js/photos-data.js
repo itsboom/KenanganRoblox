@@ -499,5 +499,21 @@ const galleryPhotos = [
         people: "Syaa, Forsther",
         date: "2025"
     }
+    ,{
+        image: "../assets/3207778252_112605783394089_1788707297579.png",
+        game: "🎮 Roblox",
+        title: "4 better",
+        caption: "me n my group of 4 against \"the last bus 13\"",
+        people: "Desmon, Niel, Kak Jiebell, Syaa",
+        date: "2026"
+    }
+    ,{
+        image: "../assets/Screenshot_2026-09-05-11-11-34-53.jpg",
+        game: "🎮 Roblox",
+        title: "CP❤",
+        caption: "cp pertama kita besty",
+        people: "Mio, Rawr",
+        date: "2025"
+    }
 
 ];
