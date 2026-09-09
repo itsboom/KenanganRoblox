@@ -500,9 +500,9 @@ const galleryPhotos = [
         date: "2026"
     }
     ,{
-        image: "assets/Screenshot_2026-09-05-11-11-34-53.jpg",
+        image: "../assets/Screenshot_2026-09-05-11-11-34-53.jpg",
         game: "🎮 Roblox",
-        title: "4 better",
+        title: "CP❤",
         caption: "cp pertama kita besty",
         people: "Mio, Rawr",
         date: "2025"
